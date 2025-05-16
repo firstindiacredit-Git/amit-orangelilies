@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 
 const HomePage = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!mobileMenuOpen);
+    };
+
+    const toggleFaq = (index) => {
+        setOpenFaqIndex(openFaqIndex === index ? null : index);
     };
 
     return (
@@ -910,7 +915,7 @@ const HomePage = () => {
                                 className="group bg-white p-0 rounded-xl shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden transform hover:translate-y-[-2px]"
                             >
                                 {/* FAQ item with accordion-like behavior */}
-                                <div className="cursor-pointer">
+                                <div className="cursor-pointer" onClick={() => toggleFaq(index)}>
                                     {/* Question part */}
                                     <div className="p-4 sm:p-6 flex justify-between items-center relative">
                                         {/* Question text */}
@@ -920,10 +925,10 @@ const HomePage = () => {
 
                                         {/* Expand/collapse icon */}
                                         <div className="flex-shrink-0 relative">
-                                            <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-orange-100 group-hover:bg-orange-200 flex items-center justify-center transition-all duration-300 transform group-hover:rotate-90">
+                                            <div className={`relative w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-orange-100 group-hover:bg-orange-200 flex items-center justify-center transition-all duration-300 ${openFaqIndex === index ? 'rotate-90' : ''}`}>
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500 transition-transform duration-500 ease-in-out group-hover:rotate-90"
+                                                    className={`h-4 w-4 sm:h-5 sm:w-5 text-orange-500 transition-transform duration-500 ease-in-out ${openFaqIndex === index ? 'rotate-90' : ''}`}
                                                     fill="none"
                                                     viewBox="0 0 24 24"
                                                     stroke="currentColor"
@@ -942,8 +947,8 @@ const HomePage = () => {
                                     </div>
 
                                     {/* Answer part with slide-down animation */}
-                                    <div className="max-h-0 overflow-hidden transition-all duration-500 group-hover:max-h-96 bg-gradient-to-br from-white to-orange-50/30">
-                                        <div className="p-4 sm:p-6 pt-0 border-t border-orange-100 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                                    <div className={`max-h-0 overflow-hidden transition-all duration-500 ${openFaqIndex === index ? 'max-h-96' : 'max-h-0'} bg-gradient-to-br from-white to-orange-50/30`}>
+                                        <div className={`p-4 sm:p-6 pt-0 border-t border-orange-100 transition-all duration-500 delay-100 ${openFaqIndex === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                                             <p className="text-sm sm:text-base text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed">
                                                 {faq.answer}
                                             </p>
