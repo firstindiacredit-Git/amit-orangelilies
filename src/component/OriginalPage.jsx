@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Features from './Features';
 
-const HomePage = () => {
+const OriginalPage = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
@@ -301,117 +300,171 @@ const HomePage = () => {
                 <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-orange-500 rounded-full animate-ping opacity-70 animation-delay-1000"></div>
 
                 <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="items-center">
-                        {/* Content side */}
-                        <div className="text-center mb-12"  style={{marginBottom:"-2rem"}}>
-                            <div className="inline-block relative mb-3">
-                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Why Choose Us</h3>
-                                <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
+                    <div className="flex flex-col md:flex-row items-center">
+                        {/* Image side */}
+                        <div className=" mt-20 w-full md:w-1/2 flex justify-center mb-12 md:mb-0 group relative">
+                            <div className="relative p-2 max-w-[300px] md:max-w-[450px] mx-auto">
+                                <div className="absolute inset-0 p-1">
+                                    <div className="h-full w-full rounded-lg border-2 border-dashed border-orange-300 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                </div>
+                                <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl blur opacity-0 group-hover:opacity-25 transition-opacity duration-500 group-hover:animate-pulse"></div>
+                                <div className="absolute top-0 left-0 w-0 h-0 border-t-2 border-l-2 border-orange-500 rounded-tl-lg transition-all duration-500 group-hover:w-10 group-hover:h-10 opacity-0 group-hover:opacity-100"></div>
+                                <div className="absolute bottom-0 right-0 w-0 h-0 border-b-2 border-r-2 border-orange-500 rounded-br-lg transition-all duration-500 group-hover:w-10 group-hover:h-10 opacity-0 group-hover:opacity-100"></div>
+                                <img
+                                    src="Images/why.webp"
+                                    alt="Orange Lilies Benefits"
+                                    className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transition-all duration-500 transform group-hover:scale-[1.03] group-hover:shadow-xl group-hover:shadow-orange-200/50"
+                                    style={{ height: "28rem" }}
+                                />
+                                <div className="absolute top-0 right-0 transform -translate-x-3 -translate-y-3 w-8 h-8 bg-orange-100 rounded-full opacity-0 group-hover:opacity-60 transition-all duration-500 blur-sm"></div>
+                                <div className="absolute bottom-0 left-0 transform translate-x-3 translate-y-3 w-8 h-8 bg-orange-200 rounded-full opacity-0 group-hover:opacity-60 transition-all duration-500 blur-sm"></div>
                             </div>
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600">The Perfect Blend of Comfort & Protection</h2>
                         </div>
-                        <Features/>
+
+                        {/* Content side */}
+                        <div className="w-full md:w-1/2 pl-0 md:pl-12 transform transition-all duration-700 hover:translate-x-1">
+                            <div className="relative inline-block mb-3">
+                                <h3 className="text-sm font-semibold text-orange-500 mb-2 tracking-wider uppercase relative z-10">Why Choose Us</h3>
+                                <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
+                            </div>
+
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-orange-600 leading-tight">
+                                <span className="relative inline-block group">
+                                    <span className="relative z-10">The Perfect Blend of</span>
+                                    <span className="absolute bottom-1 left-0 w-full h-2 bg-orange-200 transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></span>
+                                </span>
+                                <br />
+                                <span className="relative inline-block group">
+                                    <span className="relative z-10">Comfort & Protection</span>
+                                    <span className="absolute bottom-1 left-0 w-full h-2 bg-orange-200 transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></span>
+                                </span>
+                            </h2>
+
+                            <ul className="space-y-6">
+                                {[
+                                    {
+                                        title: "360° Leak Protection",
+                                        description: "All-around security with a snug fit and absorbent design, keeping you dry and confident from every angle, day or night.",
+                                        icon: (
+                                            <svg className="h-7 w-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        )
+                                    },
+                                    {
+                                        title: "Snug, Panty-like Fit",
+                                        description: "Hugs your body comfortably, just like regular underwear. No shifting, no bunching—just seamless protection and all-day ease.",
+                                        icon: (
+                                            <svg className="h-7 w-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        )
+                                    },
+                                    {
+                                        title: "8–10 Hours of Protection",
+                                        description: "Long-lasting absorbency and comfort, keeping you safe and worry-free for up to 10 hours—even on busy, heavy-flow days.",
+                                        icon: (
+                                            <svg className="h-7 w-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        )
+                                    },
+                                    {
+                                        title: "No Rashes, Cottony Soft Feel",
+                                        description: "Gentle on the skin with a soft, breathable fabric that keeps irritation away and comfort in—all through your period.",
+                                        icon: (
+                                            <svg className="h-7 w-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        )
+                                    },
+                                    {
+                                        title: "Available in 4 Sizes",
+                                        description: "Designed to offer a perfect fit for every body type. From teens to adults, experience comfort and protection.",
+                                        icon: (
+                                            <svg className="h-7 w-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        )
+                                    }
+                                ].map((item, index) => (
+                                    <li key={index} className="flex items-start group relative perspective-500">
+                                        <div className="p-1.5 rounded-full bg-orange-100 mr-3 mt-0.5 group-hover:bg-orange-200 transition-colors duration-300 flex-shrink-0">
+                                            {item.icon}
+                                        </div>
+                                        <div className="flex-1 transform transition-transform duration-500 group-hover:translate-x-1">
+                                            <h4 className="font-semibold text-lg mb-1 text-orange-800">{item.title}</h4>
+                                            <p className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300">{item.description}</p>
+                                        </div>
+                                        <div className="absolute left-0 -bottom-2 w-0 h-0.5 bg-orange-200 transition-all duration-300 group-hover:w-full opacity-0 group-hover:opacity-100"></div>
+                                    </li>
+                                ))}
+                            </ul>
+
+                            {/* <button style={{ borderRadius: '2rem' }} className="mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white rounded-full font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0">
+                                <span className="relative z-10">Explore Our Range</span>
+                                <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                                <span className="ml-3 relative z-10 transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                                <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                                
+                                <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                            </button> */}
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* How to Use Section */}
             <section className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
-                {/* Decorative background elements */}
-                <div className="absolute top-0 right-0 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-300/10 rounded-full blur-3xl"></div>
-                <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-orange-400/60 rounded-full animate-ping opacity-50"></div>
-
                 <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="text-center mb-12 md:mb-16">
-                        {/* Section subtitle with animation */}
-                        <div>
-                            <div className="inline-block relative mb-3">
-                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">How to Use</h3>
-                                <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
-                            </div>
+                    <div className="text-center mb-12">
+                        <div className="inline-block relative mb-3">
+                            <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">How to Use</h3>
+                            <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
                         </div>
-
-                        {/* Section title with highlight effect */}
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600 relative inline-block group">
-                            <span className="relative">
-                                Simple Steps for Maximum Comfort
-                                <span className="absolute bottom-2 left-0 h-3 w-full bg-orange-200/50 -z-10 transform -skew-x-3"></span>
-                            </span>
-                        </h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600">Simple Steps for Maximum Comfort</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {/* How to Use Card */}
-                        <div className="group bg-gradient-to-br from-orange-50 to-orange-100 p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 hover:from-orange-100 hover:to-orange-200 border border-orange-200/50 relative overflow-hidden">
-                            {/* Decorative elements */}
-                            <div className="absolute -top-10 -right-10 w-40 h-40 bg-orange-200/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-orange-100/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-
-                            {/* Corner accents */}
-                            <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-orange-300/40 rounded-tl-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-orange-300/40 rounded-br-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-
-                            <h4 className="text-lg sm:text-xl font-semibold text-orange-800 mb-6 group-hover:text-orange-900 relative z-10 flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                                How to Use
-                            </h4>
-                            <ul className="space-y-4 relative z-10">
-                                {[
-                                    "Unpack the sealed disposable panty.",
-                                    "Slip it on like regular underwear—no pads or tampons needed.",
-                                    "Stay protected with its snug fit and 360° leak guard for all-day comfort."
-                                ].map((step, index) => (
-                                    <li key={index} className="flex items-start group/item transform transition-all duration-300 hover:translate-x-2">
-                                        <span className="flex-shrink-0 w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 group-hover/item:bg-orange-200 transition-colors duration-300">
-                                            <span className="text-orange-500 font-medium group-hover/item:text-orange-600">{index + 1}</span>
-                                        </span>
-                                        <span className="text-orange-700 group-hover/item:text-orange-800">{step}</span>
-                                    </li>
-                                ))}
+                        <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-500 hover:from-orange-100 hover:to-orange-200 border border-orange-200/50">
+                            <h4 className="text-lg font-semibold text-orange-800 mb-4 group-hover:text-orange-900">How to Use</h4>
+                            <ul className="space-y-4">
+                                <li className="flex items-start group/item">
+                                    <span className="text-orange-500 mr-2 group-hover/item:text-orange-600">1.</span>
+                                    <span className="text-orange-700 group-hover/item:text-orange-800">Unpack the sealed disposable panty.</span>
+                                </li>
+                                <li className="flex items-start group/item">
+                                    <span className="text-orange-500 mr-2 group-hover/item:text-orange-600">2.</span>
+                                    <span className="text-orange-700 group-hover/item:text-orange-800">Slip it on like regular underwear—no pads or tampons needed.</span>
+                                </li>
+                                <li className="flex items-start group/item">
+                                    <span className="text-orange-500 mr-2 group-hover/item:text-orange-600">3.</span>
+                                    <span className="text-orange-700 group-hover/item:text-orange-800">Stay protected with its snug fit and 360° leak guard for all-day comfort.</span>
+                                </li>
                             </ul>
                         </div>
 
-                        {/* How to Dispose Card */}
-                        <div className="group bg-gradient-to-br from-pink-50 to-pink-100 p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-500 hover:from-pink-100 hover:to-pink-200 border border-pink-200/50 relative overflow-hidden">
-                            {/* Decorative elements */}
-                            <div className="absolute -top-10 -right-10 w-40 h-40 bg-pink-200/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-pink-100/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-
-                            {/* Corner accents */}
-                            <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-pink-300/40 rounded-tl-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-pink-300/40 rounded-br-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-
-                            <h4 className="text-lg sm:text-xl font-semibold text-pink-800 mb-6 group-hover:text-pink-900 relative z-10 flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                </svg>
-                                How to Dispose
-                            </h4>
-                            <ul className="space-y-4 relative z-10">
-                                {[
-                                    "Wrap the used panty in the disposal cover provided or in tissue/paper.",
-                                    "Dispose responsibly in a sanitary waste bin.",
-                                    "Do not flush—it may clog drainage systems."
-                                ].map((step, index) => (
-                                    <li key={index} className="flex items-start group/item transform transition-all duration-300 hover:translate-x-2">
-                                        <span className="flex-shrink-0 w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center mr-3 group-hover/item:bg-pink-200 transition-colors duration-300">
-                                            <span className="text-pink-500 font-medium group-hover/item:text-pink-600">{index + 1}</span>
-                                        </span>
-                                        <span className="text-pink-700 group-hover/item:text-pink-800">{step}</span>
-                                    </li>
-                                ))}
+                        <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-500 hover:from-pink-100 hover:to-pink-200 border border-pink-200/50">
+                            <h4 className="text-lg font-semibold text-pink-800 mb-4 group-hover:text-pink-900">How to Dispose</h4>
+                            <ul className="space-y-4">
+                                <li className="flex items-start group/item">
+                                    <span className="text-pink-500 mr-2 group-hover/item:text-pink-600">1.</span>
+                                    <span className="text-pink-700 group-hover/item:text-pink-800">Wrap the used panty in the disposal cover provided or in tissue/paper.</span>
+                                </li>
+                                <li className="flex items-start group/item">
+                                    <span className="text-pink-500 mr-2 group-hover/item:text-pink-600">2.</span>
+                                    <span className="text-pink-700 group-hover/item:text-pink-800">Dispose responsibly in a sanitary waste bin.</span>
+                                </li>
+                                <li className="flex items-start group/item">
+                                    <span className="text-pink-500 mr-2 group-hover/item:text-pink-600">3.</span>
+                                    <span className="text-pink-700 group-hover/item:text-pink-800">Do not flush—it may clog drainage systems.</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="text-center mt-10">
-                        <p className="text-orange-600 font-medium text-lg relative inline-block group">
-                            Simple, hygienic, and hassle-free!
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
-                        </p>
+                    <div className="text-center mt-8">
+                        <p className="text-orange-600 font-medium">Simple, hygienic, and hassle-free!</p>
                     </div>
                 </div>
             </section>
@@ -685,14 +738,14 @@ const HomePage = () => {
 
                             {/* Call to action */}
 
-                            {/* <button style={{ borderRadius: "2rem" }} className="mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white rounded-full font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0">
+                            <button style={{ borderRadius: "2rem" }} className="mt-10 px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white rounded-full font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0">
                                 <span className="relative z-10">Learn More About Our Technology</span>
                                 <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
                                 <span className="ml-1 relative z-10 transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                                 <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
-                                
+                                {/* Animated sparkle effect */}
                                 <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                            </button> */}
+                            </button>
                             {/* <div className="mt-8 transform transition-all duration-300 hover:translate-x-1 relative opacity-0 animate-fadeIn animation-delay-700" style={{ animationFillMode: 'forwards' }}>
                                 <a
                                     href="#"
@@ -1365,4 +1418,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default OriginalPage;
