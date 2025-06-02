@@ -303,14 +303,14 @@ const HomePage = () => {
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="items-center">
                         {/* Content side */}
-                        <div className="text-center mb-12"  style={{marginBottom:"-2rem"}}>
+                        <div className="text-center mb-12" style={{ marginBottom: "-2rem" }}>
                             <div className="inline-block relative mb-3">
                                 <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Why Choose Us</h3>
                                 <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
                             </div>
                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600">The Perfect Blend of Comfort & Protection</h2>
                         </div>
-                        <Features/>
+                        <Features />
                     </div>
                 </div>
             </section>
@@ -879,7 +879,15 @@ const HomePage = () => {
                                     <p className="text-sm sm:text-base text-gray-700 mb-6">
                                         Experience the next level of period care with our disposable panties.
                                     </p>
-                                    <p className="text-sm sm:text-base text-orange-700 font-medium">
+                                    <div className="relative w-full h-[200px] overflow-hidden rounded-lg">
+                                        <img
+                                            src="/Images/box.jpg"
+                                            alt="Orange Lilies Product"
+                                            className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 to-transparent"></div>
+                                    </div>
+                                    <p className="mt-4 text-sm sm:text-base text-orange-700 font-medium">
                                         Coming soon to select stores and online! Stay tuned for the comfort you've been waiting for.
                                     </p>
                                 </div>
