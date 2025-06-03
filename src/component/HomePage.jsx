@@ -4,6 +4,8 @@ import Features from './Features';
 const HomePage = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
+    const [email, setEmail] = useState('');
+    const [subscriptionStatus, setSubscriptionStatus] = useState('');
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!mobileMenuOpen);
@@ -11,6 +13,29 @@ const HomePage = () => {
 
     const toggleFaq = (index) => {
         setOpenFaqIndex(openFaqIndex === index ? null : index);
+    };
+
+    const handleSubscribe = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('http://localhost:5000/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Subscription failed');
+            }
+
+            setSubscriptionStatus('success');
+            setEmail('');
+        } catch (error) {
+            console.error('Subscription error:', error);
+            setSubscriptionStatus('error');
+        }
     };
 
     return (
@@ -691,7 +716,7 @@ const HomePage = () => {
                                 <span className="ml-1 relative z-10 transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                                 <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
                                 
-                                <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                                <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover:translate-x-full group-hover:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
                             </button> */}
                             {/* <div className="mt-8 transform transition-all duration-300 hover:translate-x-1 relative opacity-0 animate-fadeIn animation-delay-700" style={{ animationFillMode: 'forwards' }}>
                                 <a
@@ -1244,16 +1269,29 @@ const HomePage = () => {
                                 <p className="text-orange-700 text-xs sm:text-sm">Get updates on new products, special offers, and period care tips.</p>
                             </div>
                             <div>
-                                <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
+                                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 sm:gap-0">
                                     <input
                                         type="email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
                                         placeholder="Your email address"
+                                        required
                                         className="px-3 py-2 bg-white border border-orange-200 rounded-full sm:rounded-r-none text-orange-800 placeholder-orange-400 flex-grow focus:outline-none focus:ring-2 focus:ring-orange-400 text-xs sm:text-sm shadow-sm"
                                     />
-                                    <button style={{ borderRadius: "0rem 2rem 2rem 0rem" }} className="px-4 py-2 bg-orange-500 hover:bg-orange-600 transition-all duration-300 rounded-full sm:rounded-l-none text-white font-medium transform hover:scale-105 hover:shadow-lg text-xs sm:text-sm">
+                                    <button 
+                                        type="submit"
+                                        style={{ borderRadius: "0rem 2rem 2rem 0rem" }} 
+                                        className="px-4 py-2 bg-orange-500 hover:bg-orange-600 transition-all duration-300 rounded-full sm:rounded-l-none text-white font-medium transform hover:scale-105 hover:shadow-lg text-xs sm:text-sm"
+                                    >
                                         Subscribe
                                     </button>
-                                </div>
+                                </form>
+                                {subscriptionStatus === 'success' && (
+                                    <p className="text-green-600 text-xs mt-2">Thank you for subscribing!</p>
+                                )}
+                                {subscriptionStatus === 'error' && (
+                                    <p className="text-red-600 text-xs mt-2">Something went wrong. Please try again.</p>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -1261,7 +1299,10 @@ const HomePage = () => {
                     {/* Bottom section */}
                     <div className="pt-4 border-t border-orange-300 flex flex-col md:flex-row justify-between items-center">
                         <p className="text-orange-700 text-xs mb-2 md:mb-0 transform transition-all duration-500 hover:text-orange-600">
-                            © 2025 Orange Lilies (A unit of The Kutumbaka Group). All rights reserved.
+                            © 2025 Orange Lilies (A unit of The Kutumbaka Group). All rights reserved. | Developed by 
+                            <a href="https://pizeonfly.com/" target="_blank" rel="noopener noreferrer"className='ml-1'>
+                            <span className="text-orange-700 hover:text-orange-500 transition-colors duration-300">Pizeonfly</span>
+                            </a>
                         </p>
                         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs">
                             {["Privacy Policy", "Terms of Service", "Shipping Policy"].map((policy, index) => (
