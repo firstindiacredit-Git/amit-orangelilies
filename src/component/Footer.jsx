@@ -163,7 +163,7 @@ const Footer = () => {
                                     />
                                     <button
                                         type="submit"
-                                        style={{ borderRadius: "0rem 2rem 2rem 0rem" }}
+                                        style={{ borderRadius: "0rem 2rem 2rem 0rem" , backgroundColor: "#f97316" }}
                                         className="px-4 py-2 bg-orange-500 hover:bg-orange-600 transition-all duration-300 rounded-full sm:rounded-l-none text-white font-medium transform hover:scale-105 hover:shadow-lg text-xs sm:text-sm"
                                     >
                                         Subscribe

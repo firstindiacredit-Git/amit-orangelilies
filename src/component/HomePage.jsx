@@ -6,13 +6,13 @@ import Footer from './Footer';
 const HomePage = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-   
+
 
     const toggleFaq = (index) => {
         setOpenFaqIndex(openFaqIndex === index ? null : index);
     };
 
-   
+
 
     return (
         <div className="min-h-screen bg-orange-50 text-gray-800">
@@ -34,14 +34,15 @@ const HomePage = () => {
                 <div className="w-full md:w-1/2 mb-12 md:mb-0 pr-0 md:pr-8 z-10 transform transition-all duration-700 hover:translate-x-2 group">
                     <div className="relative">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-orange-500 leading-tight relative">
-                            <span className="inline-block transform transition-all duration-500 hover:text-orange-600 hover:scale-105">Period Care Redefined</span>
+                            <span className="inline-block transform transition-all duration-500 hover:text-orange-600 hover:scale-105">
+                                <span className="font-serif font-bold italic">Orange Lilies</span> Disposable Panties</span>
                             <br />
                             <div className="h-1 w-24 bg-orange-400 mt-4 rounded-full transform transition-all duration-500 group-hover:w-40"></div>
                         </h2>
 
                         <p className="text-base sm:text-lg mb-6 text-gray-600 leading-relaxed animate-fadeIn group-hover:text-gray-700 transition-colors duration-300">
                             <span className="text-orange-500 font-medium relative inline-block group/link">
-                                Orange Lilies Disposable Panties –
+                                Period Care Redefined–
                                 <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover/link:w-full"></span>
                             </span> the ultimate blend of comfort, hygiene, and freedom. Say goodbye to leaks, discomfort, and bulky products.
                         </p>
@@ -89,7 +90,7 @@ const HomePage = () => {
 
                         {/* Image with enhanced effects */}
                         <img
-                            src="Images/herose.png"
+                            src="Images/hero.jpg"
                             alt="Orange Lilies Period Pads"
                             className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
                             style={{ height: "23rem" }}
@@ -125,7 +126,7 @@ const HomePage = () => {
 
                             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-orange-600 relative">
                                 <span className="relative inline-block group/head">
-                                    <span className="inline-block transform transition-all duration-500 hover:text-orange-700 hover:scale-105">Redefining Period Comfort</span>
+                                    <span className="inline-block transform transition-all duration-500 hover:text-orange-700 hover:scale-105">Transforming Period Comfort</span>
                                     <span className="absolute bottom-1 left-0 w-full h-2 bg-orange-200/50 transform origin-left transition-transform duration-300 scale-x-0 group-hover/head:scale-x-100 -z-10"></span>
                                 </span>
                                 <div className="h-1 w-24 bg-orange-400 mt-4 rounded-full transform transition-all duration-500 group-hover:w-40"></div>
@@ -205,8 +206,8 @@ const HomePage = () => {
                         <div className="inline-block relative mb-3">
                             <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">DISTRIBUTORSHIP</h3>
                             <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
-                        </div>                       
-                         <h2 className="text-3xl sm:text-4xl font-bold text-orange-600 mb-4">Become Our Distribution Partner</h2>
+                        </div>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-orange-600 mb-4">Become Our Distribution Partner</h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -840,7 +841,7 @@ const HomePage = () => {
                                 </p>
 
                                 <div className="mb-6 sm:mb-8 bg-orange-100/70 p-4 rounded-lg border border-orange-200 transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg">
-                                    <div className="font-bold text-orange-800 mb-2 text-base sm:text-lg">Use Code: <span className="bg-orange-500 text-white px-3 py-1 rounded-md ml-2 tracking-wider">FIRST15</span></div>
+                                    {/* <div className="font-bold text-orange-800 mb-2 text-base sm:text-lg">Use Code: <span className="bg-orange-500 text-white px-3 py-1 rounded-md ml-2 tracking-wider">FIRST15</span></div> */}
                                     <p className="text-sm sm:text-base text-gray-700">
                                         Enjoy 15% off on your first purchase of Orange Lilies™ Disposable Panties. Comfort, protection, and savings—all in one pack!
                                     </p>
@@ -871,7 +872,7 @@ const HomePage = () => {
                                     </p>
                                 </div>
 
-                                <button style={{ borderRadius: "2rem" }} className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white rounded-full font-bold text-base sm:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20">
+                                <button style={{ borderRadius: "2rem", backgroundColor: "#f97316" }} className="group relative px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold text-base sm:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20">
                                     <span className="relative z-10 group-hover:text-white transition-colors duration-300">Shop Now</span>
                                     <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-orange-600 to-orange-600 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
 
@@ -1094,7 +1095,7 @@ const HomePage = () => {
                     <div className="mt-10 sm:mt-12 text-center animate-fadeIn opacity-0" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
                         <p className="text-gray-600 mb-4">Can't find what you're looking for?</p>
 
-                        <button style={{ borderRadius: "2rem" }} className=" px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white rounded-full font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0">
+                        <button style={{ borderRadius: "2rem", backgroundColor: "#f97316" }} className="group relative px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold text-base sm:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20">
                             <span className="relative z-10">Ask Us Directly</span>
                             <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
                             <span className="ml-1 relative z-10 transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
@@ -1108,7 +1109,7 @@ const HomePage = () => {
 
             {/* Footer */}
             <Footer />
-            
+
             {/* CSS Animation Styles */}
             <style jsx>{`
             @keyframes wave {
