@@ -113,23 +113,27 @@ const Footer = () => {
                             {
                                 title: "Help",
                                 links: [
-                                    { text: "FAQs", href: "#faq" },
-                                    { text: "Shipping & Returns", href: "#" },
-                                    { text: "Care Instructions", href: "#care" },
+                                    { text: "FAQs", href: "/home#faq" },
+                                    { text: "Shipping & Returns", href: "/shipping" },
+                                    { text: "Care Instructions", href: "/home#care" },
                                     { text: "Contact Us", href: "/contact" }
                                 ]
                             },
                             {
                                 title: "About",
-                                links: ["Our Story", "Sustainability", "Blog", { text: "Reviews", href: "#reviews" }]
+                                links: [
+                                    { text: "Our Story", href: "/about" }, 
+                                    "Sustainability", "Blog",
+                                    { text: "Reviews", href: "/home#reviews" }
+                                ]
                             },
                             {
                                 title: "Contact",
                                 links: [
                                     { text: "info@orangelilies.com", href: "mailto:info@orangelilies.com" },
-                                    {text:"+91-8368615088", href:"https://api.whatsapp.com/send?phone=918368615088"},
-                                    {text:"E 44 Okhla phase 2, Delhi 110020", href:"https://www.google.com/maps/place/Orange+Lilies/@28.5356781,77.2679603,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1a06e1bd4e3:0x74f32ec86992116f!8m2!3d28.5356734!4d77.2705352!16s%2Fg%2F11mdp4p2xb?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"},
-                                    {text:"The Kutumb group is ISO 9001:2015 certified", href:"https://www.getdistributors.com/distributors/the-kutumb-group-258587/"}
+                                    { text: "+91-8368615088", href: "https://api.whatsapp.com/send?phone=918368615088" },
+                                    { text: "E 44 Okhla phase 2, Delhi 110020", href: "https://www.google.com/maps/place/Orange+Lilies/@28.5356781,77.2679603,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1a06e1bd4e3:0x74f32ec86992116f!8m2!3d28.5356734!4d77.2705352!16s%2Fg%2F11mdp4p2xb?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" },
+                                    { text: "The Kutumb group is ISO 9001:2015 certified", href: "https://www.getdistributors.com/distributors/the-kutumb-group-258587/" }
                                 ]
                             }
                         ].map((category, index) => (
@@ -201,13 +205,17 @@ const Footer = () => {
                             </a>
                         </p>
                         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs">
-                            {["Privacy Policy", "Terms of Service", "Shipping Policy"].map((policy, index) => (
+                            {[
+                                { label: "Privacy Policy", href: "/privacy&policy" },
+                                { label: "Terms of Service", href: "/termsofservice" },
+                                { label: "Shipping Policy", href: "/shipping" }
+                            ].map((policy, index) => (
                                 <a
                                     key={index}
-                                    href="#"
+                                    href={policy.href}
                                     className="text-orange-700 hover:text-orange-500 transition-colors duration-300 relative group"
                                 >
-                                    <span className="relative z-10 text-orange-700">{policy}</span>
+                                    <span className="relative z-10 text-orange-700">{policy.label}</span>
                                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
                                 </a>
                             ))}

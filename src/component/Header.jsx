@@ -39,7 +39,7 @@ const Header = () => {
             <header className="fixed top-0 sm:top-6 w-full left-0 sm:left-1/2 transform sm:-translate-x-1/2 z-50 sm:w-[90%] max-w-7xl px-4 sm:px-0">
                 <div className="bg-orange-400/90 backdrop-blur-md sm:rounded-full py-3 px-4 sm:px-8 flex items-center justify-between shadow-lg sm:border border-white/10">
                     {/* Logo on the left */}
-                    <div onClick={() => navigate('/home#')} className="flex items-center transition-all duration-500 hover:scale-105 cursor-pointer">
+                    <div onClick={() => navigate('/home#hero')} className="flex items-center transition-all duration-500 hover:scale-105 cursor-pointer">
                         <img
                             src='Images/logo.png'
                             alt="Orange Lilies"
@@ -49,7 +49,7 @@ const Header = () => {
                     </div>
                     {/* Navigation on the right - Desktop */}
                     <nav className="hidden md:flex items-center space-x-8">
-                        <a href="/home#about" onClick={(e) => handleNavigation(e, '#about')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
+                        <a href="/about" className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
                             <span className="text-white">About</span>
                         </a>
                         {/* <a href="#products" className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">

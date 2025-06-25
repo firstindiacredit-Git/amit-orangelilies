@@ -1,18 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import Features from './Features';
 import Header from './Header';
 import Footer from './Footer';
 
 const HomePage = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
+    const location = useLocation();
 
-
+    useEffect(() => {
+        if (location.hash) {
+            const el = document.getElementById(location.hash.replace("#", ""));
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
 
     const toggleFaq = (index) => {
         setOpenFaqIndex(openFaqIndex === index ? null : index);
     };
-
-
 
     return (
         <div className="min-h-screen bg-orange-50 text-gray-800">
@@ -69,7 +76,7 @@ const HomePage = () => {
                                 {/* Animated sparkle effect */}
                                 <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
                             </a>
-                            <a href='#why-choose' style={{ borderRadius: '2rem', backgroundColor: '#fff', color: '#ec751e', border: '2px solid #ec751e' }} className="px-6 sm:px-8 py-3 sm:py-4 text-orange-500 rounded-full font-medium relative group">
+                            <a href='/about' style={{ borderRadius: '2rem', backgroundColor: '#fff', color: '#ec751e', border: '2px solid #ec751e' }} className="px-6 sm:px-8 py-3 sm:py-4 text-orange-500 rounded-full font-medium relative group">
                                 <span className="relative z-10">Learn More</span>
                                 <span className="ml-1 relative z-10 inline-block transition-all duration-300 group-hover:translate-x-3">→</span>
                             </a>
@@ -99,7 +106,7 @@ const HomePage = () => {
                             src="Images/hero.jpg"
                             alt="Orange Lilies Period Panties"
                             className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
-                            style={{ height: "23rem" }}
+                            style={{ height: "24rem" }}
                         />
 
                         {/* Enhanced floating elements - smaller */}
@@ -843,9 +850,7 @@ const HomePage = () => {
                                 </div>
 
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-orange-600 group">
-                                    <span className="inline-block transform transition-all duration-500 hover:translate-x-1">Comfort</span>
-                                    <span className="inline-block transform transition-all duration-500 hover:translate-x-1"> That</span>
-                                    <span className="inline-block transform transition-all duration-500 hover:translate-x-1"> Saves</span>
+                                    <span className="inline-block transform transition-all duration-500 hover:translate-x-1">Comfort That Saves</span>
                                 </h2>
 
                                 <div className="mb-6">
@@ -888,14 +893,20 @@ const HomePage = () => {
                                     </p>
                                 </div>
 
-                                <button style={{ borderRadius: "2rem", backgroundColor: "#f97316" }} className="group relative px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold text-base sm:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20">
-                                    <span className="relative z-10 group-hover:text-white transition-colors duration-300">Shop Now</span>
-                                    <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-orange-600 to-orange-600 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
+                                <a
+                                    href="https://dl.flipkart.com/s/iFfOa5NNNN"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <button style={{ borderRadius: "2rem", backgroundColor: "#f97316" }} className="group relative px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold text-base sm:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20">
+                                        <span className="relative z-10 group-hover:text-white transition-colors duration-300">Shop Now</span>
+                                        <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-orange-600 to-orange-600 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
 
-                                    {/* Button effects */}
-                                    <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover:translate-x-full group-hover:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                                    <span className="absolute bottom-0 right-0 w-20 h-20 bg-white/20 rounded-full translate-x-full translate-y-1/2 group-hover:-translate-x-full group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                                </button>
+                                        {/* Button effects */}
+                                        <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover:translate-x-full group-hover:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                                        <span className="absolute bottom-0 right-0 w-20 h-20 bg-white/20 rounded-full translate-x-full translate-y-1/2 group-hover:-translate-x-full group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1112,18 +1123,18 @@ const HomePage = () => {
                         <p className="text-gray-600 mb-4">Can't find what you're looking for?</p>
 
                         <a
-                                href="https://api.whatsapp.com/send?phone=918368615088"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
-                                className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
-                            >
-                                <span className="relative z-10 text-white">Ask Us Directly</span>
-                                <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
-                                <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
-                                {/* Animated sparkle effect */}
-                                <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                            </a>
+                            href="https://api.whatsapp.com/send?phone=918368615088"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                            className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                        >
+                            <span className="relative z-10 text-white">Ask Us Directly</span>
+                            <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                            <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                            {/* Animated sparkle effect */}
+                            <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                        </a>
                     </div>
                 </div>
             </section>
