@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Clock, Heart, Smile, Check, Sun } from 'lucide-react';
+import { Shield, Clock, Heart, Smile, Check, Sun, Ratio } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -37,7 +37,7 @@ const featuresList = [
   {
     title: "Available in 4 Sizes",
     description: "Designed to offer a perfect fit for every body type. From teens to adults, experience comfort and protection.",
-    icon: <Check className="w-10 h-10 text-orange-500" />,
+    icon: <Ratio className="w-10 h-10 text-orange-500" />,
     gradient: "from-blue-100 to-orange-50",
     color: "blue",
   },
@@ -47,6 +47,27 @@ const featuresList = [
     icon: <Sun className="w-10 h-10 text-orange-500" />,
     gradient: "from-purple-100 to-orange-50",
     color: "purple",
+  },
+  {
+    title: "ISO 9001:2015 Certified Quality",
+    description: "Internationally recognized ISO 9001:2015 certification for quality management systems, ensuring consistent, high-quality products and customer satisfaction.",
+    icon: <Shield className="w-10 h-10 text-blue-500" />, 
+    gradient: "from-blue-100 to-blue-50",
+    color: "blue",
+  },
+  {
+    title: "GMP (Good Manufacturing Practices) Certified",
+    description: "Certified for Good Manufacturing Practices (GMP), guaranteeing safe, hygienic, and reliable production standards for women's hygiene products.",
+    icon: <Check className="w-10 h-10 text-green-500" />, 
+    gradient: "from-green-100 to-green-50",
+    color: "green",
+  },
+  {
+    title: "Modern & Stylish Design",
+    description: "Thoughtfully crafted with a modern, elegant look—because period care should feel as good as it looks. Experience comfort and confidence with style.",
+    icon: <Smile className="w-10 h-10 text-pink-500" />, 
+    gradient: "from-pink-100 to-purple-50",
+    color: "pink",
   },
 ];
 
@@ -169,7 +190,7 @@ const Features = () => {
           ))}
         </div>
         
-        <motion.div 
+        {/* <motion.div 
           className="mt-16 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -197,15 +218,8 @@ const Features = () => {
           >
             Orange Lilies Disposable Panties are crafted for maximum absorption and softness, giving you worry-free protection and comfort from morning to night.
           </motion.p>
-          <motion.a 
-            href="#pricing" 
-            className="btn-primary inline-block"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Experience Comfort Now
-          </motion.a>
-        </motion.div>
+         
+        </motion.div> */}
       </div>
     </section>
   );

@@ -56,17 +56,23 @@ const HomePage = () => {
 
                         {/* Enhanced buttons with more animations */}
                         <div className="flex flex-wrap gap-4">
-                            <button style={{ borderRadius: '2rem', backgroundColor: '#ec751e' }} className=" px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0">
-                                <span className="relative z-10">Shop Now</span>
+                            <a
+                                href="https://dl.flipkart.com/s/iFfOa5NNNN"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                                className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                            >
+                                <span className="relative z-10 text-white">Shop Now</span>
                                 <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
                                 <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
                                 {/* Animated sparkle effect */}
                                 <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                            </button>
-                            <button style={{ borderRadius: '2rem', backgroundColor: '#fff', color: '#ec751e', border: '2px solid #ec751e' }} className="px-6 sm:px-8 py-3 sm:py-4 text-orange-500 rounded-full font-medium relative group">
+                            </a>
+                            <a href='#why-choose' style={{ borderRadius: '2rem', backgroundColor: '#fff', color: '#ec751e', border: '2px solid #ec751e' }} className="px-6 sm:px-8 py-3 sm:py-4 text-orange-500 rounded-full font-medium relative group">
                                 <span className="relative z-10">Learn More</span>
                                 <span className="ml-1 relative z-10 inline-block transition-all duration-300 group-hover:translate-x-3">→</span>
-                            </button>
+                            </a>
 
 
                         </div>
@@ -91,7 +97,7 @@ const HomePage = () => {
                         {/* Image with enhanced effects */}
                         <img
                             src="Images/hero.jpg"
-                            alt="Orange Lilies Period Pads"
+                            alt="Orange Lilies Period Panties"
                             className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
                             style={{ height: "23rem" }}
                         />
@@ -180,7 +186,7 @@ const HomePage = () => {
                                 {/* Image with enhanced effects */}
                                 <img
                                     src="Images/about.avif"
-                                    alt="Orange Lilies Period Pads"
+                                    alt="Orange Lilies Period Panties"
                                     className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
                                     style={{ height: "23rem" }}
                                 />
@@ -263,9 +269,19 @@ const HomePage = () => {
                             </div>
 
                             <div className="text-center">
-                                <button className="px-8 py-3 bg-orange-500 text-white rounded-full font-medium hover:bg-orange-600 transition-colors duration-300 transform hover:scale-105">
-                                    Contact Us for Partnership
-                                </button>
+                                <a
+                                    href="https://www.getdistributors.com/distributors/the-kutumb-group-258587/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                                    className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                                >
+                                    <span className="relative z-10 text-white">Contact Us for Partnership</span>
+                                    <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                                    <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                                    {/* Animated sparkle effect */}
+                                    <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -296,7 +312,7 @@ const HomePage = () => {
             </section>
 
             {/* How to Use Section */}
-            <section className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
+            <section id='care' className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 right-0 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-300/10 rounded-full blur-3xl"></div>
@@ -341,7 +357,7 @@ const HomePage = () => {
                             <ul className="space-y-4 relative z-10">
                                 {[
                                     "Unpack the sealed disposable panty.",
-                                    "Slip it on like regular underwear—no pads or tampons needed.",
+                                    "Slip it on like regular underwear—no Panties or tampons needed.",
                                     "Stay protected with its snug fit and 360° leak guard for all-day comfort."
                                 ].map((step, index) => (
                                     <li key={index} className="flex items-start group/item transform transition-all duration-300 hover:translate-x-2">
@@ -397,7 +413,7 @@ const HomePage = () => {
             </section>
 
             {/* Customer Reviews */}
-            <section className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100/40 relative overflow-hidden">
+            <section id='reviews' className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100/40 relative overflow-hidden">
                 <div className="absolute top-20 left-20 w-64 h-64 bg-orange-200/20 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-20 right-20 w-64 h-64 bg-orange-300/20 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-orange-400/60 rounded-full animate-ping opacity-70"></div>
@@ -427,12 +443,12 @@ const HomePage = () => {
                         {[
                             {
                                 name: "Sarah J.",
-                                review: "These pads have changed my period experience completely. So comfortable and reliable - I won't use anything else now!",
+                                review: "These panties have changed my period experience completely. So comfortable and reliable - I won't use anything else now!",
                                 color: "orange"
                             },
                             {
                                 name: "Mia L.",
-                                review: "I have very sensitive skin and these are the only pads that don't cause irritation. Plus, they're super absorbent!",
+                                review: "I have very sensitive skin and these are the only panties that don't cause irritation. Plus, they're super absorbent!",
                                 color: "pink"
                             },
                             {
@@ -622,7 +638,7 @@ const HomePage = () => {
                                 },
                                 {
                                     title: "Secure Fit Technology",
-                                    description: "Unique wing design and adhesive backing ensure your pad stays in place, no matter how active your day.",
+                                    description: "Unique wing design and adhesive backing ensure your Panties stays in place, no matter how active your day.",
                                     icon: (
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -927,24 +943,24 @@ const HomePage = () => {
                                 color: "orange"
                             },
                             {
-                                title: "CONVENIENT SUBSCRIPTION",
-                                description: "Never run out of supplies with our flexible subscription service delivered right to your door.",
+                                title: "ECO-FRIENDLY MATERIALS",
+                                description: "Our products are made from biodegradable and sustainable materials, ensuring a smaller environmental footprint.",
                                 icon: (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 1.343-3 3 0 2.5 3 7 3 7s3-4.5 3-7c0-1.657-1.343-3-3-3zm0 0V4m0 0C7.582 4 4 7.582 4 12c0 4.418 3.582 8 8 8s8-3.582 8-8c0-4.418-3.582-8-8-8z" />
                                     </svg>
                                 ),
-                                color: "pink"
+                                color: "green"
                             },
                             {
-                                title: "FAST COMFORT GUARANTEE",
-                                description: "Experience complete satisfaction or we'll refund your purchase within 30 days, no questions asked.",
+                                title: "DISCREET PACKAGING",
+                                description: "All orders are shipped in plain, unmarked packaging to ensure your privacy and comfort.",
                                 icon: (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7l9-4 9 4M4 10v10a1 1 0 001 1h14a1 1 0 001-1V10M4 10l8 5 8-5" />
                                     </svg>
                                 ),
-                                color: "blue"
+                                color: "purple"
                             }
                         ].map((service, index) => (
                             <div key={index} className="group relative">
@@ -1022,24 +1038,24 @@ const HomePage = () => {
                     <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
                         {[
                             {
-                                question: "How often should I change my pad?",
-                                answer: "We recommend changing your pad every 4-8 hours, depending on your flow. Our pads are designed to provide protection for up to 12 hours, but changing regularly promotes better hygiene."
+                                question: "How often should I change my Panties?",
+                                answer: "We recommend changing your Panties every 4-8 hours, depending on your flow. Our Panties are designed to provide protection for up to 12 hours, but changing regularly promotes better hygiene."
                             },
                             {
-                                question: "Are Orange Lilies pads suitable for sensitive skin?",
-                                answer: "Yes! Our pads are hypoallergenic and dermatologically tested, making them ideal for those with sensitive skin. They're free from harsh chemicals, fragrances, and dyes that can cause irritation."
+                                question: "Are Orange Lilies Panties suitable for sensitive skin?",
+                                answer: "Yes! Our Panties are hypoallergenic and dermatologically tested, making them ideal for those with sensitive skin. They're free from harsh chemicals, fragrances, and dyes that can cause irritation."
                             },
                             {
                                 question: "Do you offer different absorbencies?",
                                 answer: "Absolutely. Our range includes light, regular, heavy, and overnight absorbencies to suit your needs throughout your cycle."
                             },
                             {
-                                question: "Can I swim with your pads?",
-                                answer: "Our pads are not designed for swimming. For water activities, we recommend using tampons or menstrual cups."
+                                question: "Can I swim with your Panties?",
+                                answer: "Our Panties are not designed for swimming. For water activities, we recommend using tampons or menstrual cups."
                             },
                             {
-                                question: "How do Orange Lilies pads compare to other brands?",
-                                answer: "Our pads offer superior absorbency, better comfort, and are made with eco-friendly materials. Many customers who switch to Orange Lilies report fewer leaks and greater comfort compared to other brands."
+                                question: "How do Orange Lilies Panties compare to other brands?",
+                                answer: "Our Panties offer superior absorbency, better comfort, and are made with eco-friendly materials. Many customers who switch to Orange Lilies report fewer leaks and greater comfort compared to other brands."
                             }
                         ].map((faq, index) => (
                             <div
@@ -1095,14 +1111,19 @@ const HomePage = () => {
                     <div className="mt-10 sm:mt-12 text-center animate-fadeIn opacity-0" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
                         <p className="text-gray-600 mb-4">Can't find what you're looking for?</p>
 
-                        <button style={{ borderRadius: "2rem", backgroundColor: "#f97316" }} className="group relative px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold text-base sm:text-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-300/20">
-                            <span className="relative z-10">Ask Us Directly</span>
-                            <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
-                            <span className="ml-1 relative z-10 transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
-                            <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
-                            {/* Animated sparkle effect */}
-                            <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                        </button>
+                        <a
+                                href="https://api.whatsapp.com/send?phone=918368615088"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                                className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                            >
+                                <span className="relative z-10 text-white">Ask Us Directly</span>
+                                <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                                <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                                {/* Animated sparkle effect */}
+                                <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                            </a>
                     </div>
                 </div>
             </section>

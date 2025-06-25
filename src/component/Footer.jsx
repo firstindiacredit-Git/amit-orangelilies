@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { href } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -102,24 +103,34 @@ const Footer = () => {
                         {[
                             {
                                 title: "Shop",
-                                links: ["All Products", "Bestsellers", "New Arrivals", "Bundles & Kits"]
+                                links: [
+                                    { text: "All Products", href: "https://dl.flipkart.com/s/iF9TO8NNNN" },
+                                    { text: "Bestsellers", href: "https://dl.flipkart.com/s/iFGaqbNNNN" },
+                                    { text: "New Arrivals", href: "https://dl.flipkart.com/s/iF9TO8NNNN" },
+                                    { text: "Bundles & Kits", href: "https://dl.flipkart.com/s/iFGaqbNNNN" }
+                                ]
                             },
                             {
                                 title: "Help",
                                 links: [
                                     { text: "FAQs", href: "#faq" },
                                     { text: "Shipping & Returns", href: "#" },
-                                    { text: "Care Instructions", href: "#" },
+                                    { text: "Care Instructions", href: "#care" },
                                     { text: "Contact Us", href: "/contact" }
                                 ]
                             },
                             {
                                 title: "About",
-                                links: ["Our Story", "Sustainability", "Blog", "Reviews"]
+                                links: ["Our Story", "Sustainability", "Blog", { text: "Reviews", href: "#reviews" }]
                             },
                             {
                                 title: "Contact",
-                                links: ["info@orangelilies.com", "+91-8368615088", "E 44 Okhla phase 2, Delhi 110020", "The Kutumb group is ISO 9001:2015 certified"]
+                                links: [
+                                    { text: "info@orangelilies.com", href: "mailto:info@orangelilies.com" },
+                                    {text:"+91-8368615088", href:"https://api.whatsapp.com/send?phone=918368615088"},
+                                    {text:"E 44 Okhla phase 2, Delhi 110020", href:"https://www.google.com/maps/place/Orange+Lilies/@28.5356781,77.2679603,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1a06e1bd4e3:0x74f32ec86992116f!8m2!3d28.5356734!4d77.2705352!16s%2Fg%2F11mdp4p2xb?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"},
+                                    {text:"The Kutumb group is ISO 9001:2015 certified", href:"https://www.getdistributors.com/distributors/the-kutumb-group-258587/"}
+                                ]
                             }
                         ].map((category, index) => (
                             <div key={index} className="text-center md:text-left transform transition-all duration-500 hover:translate-y-[-3px] group">
@@ -133,6 +144,8 @@ const Footer = () => {
                                             <a
                                                 href={typeof link === 'string' ? '#' : link.href}
                                                 className="text-orange-700 hover:text-orange-500 transition-colors duration-300 relative overflow-hidden group/link inline-block text-xs sm:text-sm"
+                                                target={typeof link === 'object' && link.href && link.href.startsWith('http') ? "_blank" : undefined}
+                                                rel={typeof link === 'object' && link.href && link.href.startsWith('http') ? "noopener noreferrer" : undefined}
                                             >
                                                 <span className="relative z-10 text-orange-700">{typeof link === 'string' ? link : link.text}</span>
                                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover/link:w-full"></span>
@@ -163,7 +176,7 @@ const Footer = () => {
                                     />
                                     <button
                                         type="submit"
-                                        style={{ borderRadius: "0rem 2rem 2rem 0rem" , backgroundColor: "#f97316" }}
+                                        style={{ borderRadius: "0rem 2rem 2rem 0rem", backgroundColor: "#f97316" }}
                                         className="px-4 py-2 bg-orange-500 hover:bg-orange-600 transition-all duration-300 rounded-full sm:rounded-l-none text-white font-medium transform hover:scale-105 hover:shadow-lg text-xs sm:text-sm"
                                     >
                                         Subscribe

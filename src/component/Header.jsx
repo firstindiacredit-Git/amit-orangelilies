@@ -39,7 +39,7 @@ const Header = () => {
             <header className="fixed top-0 sm:top-6 w-full left-0 sm:left-1/2 transform sm:-translate-x-1/2 z-50 sm:w-[90%] max-w-7xl px-4 sm:px-0">
                 <div className="bg-orange-400/90 backdrop-blur-md sm:rounded-full py-3 px-4 sm:px-8 flex items-center justify-between shadow-lg sm:border border-white/10">
                     {/* Logo on the left */}
-                    <div onClick={() => navigate('/home')} className="flex items-center transition-all duration-500 hover:scale-105 cursor-pointer">
+                    <div onClick={() => navigate('/home#')} className="flex items-center transition-all duration-500 hover:scale-105 cursor-pointer">
                         <img
                             src='Images/logo.png'
                             alt="Orange Lilies"
@@ -63,7 +63,7 @@ const Header = () => {
                                 <span className="text-white">FAQs</span>
                             </a>
                         </div>
-                        <a href="#footer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <a href="https://dl.flipkart.com/s/iFfOa5NNNN" target="_blank" rel="noopener noreferrer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
                             <span className="text-orange-500">Shop Now</span>
                         </a>
                     </nav>
