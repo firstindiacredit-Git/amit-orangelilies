@@ -6,6 +6,7 @@ import About from './component/About'
 import Shipping from './component/Shipping'
 import Privacy from './component/Privacy'
 import Terms from './component/Terms'
+import Sustainability from './component/Sustainability'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path='/shipping' element={<Shipping />}></Route>
           <Route path='/privacy&policy' element={<Privacy />}></Route>
           <Route path='/termsofservice' element={<Terms />}></Route>
-
+          <Route path='/sustainability' element={<Sustainability />}></Route>
 
         </Routes>
       </BrowserRouter>

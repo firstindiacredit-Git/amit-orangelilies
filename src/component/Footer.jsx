@@ -123,7 +123,8 @@ const Footer = () => {
                                 title: "About",
                                 links: [
                                     { text: "Our Story", href: "/about" }, 
-                                    "Sustainability", "Blog",
+                                    {text:"Sustainability",href:"/sustainability"}, 
+                                    "Blog",
                                     { text: "Reviews", href: "/home#reviews" }
                                 ]
                             },
@@ -199,7 +200,7 @@ const Footer = () => {
                     {/* Bottom section */}
                     <div className="pt-4 border-t border-orange-300 flex flex-col md:flex-row justify-between items-center">
                         <p className="text-orange-700 text-xs mb-2 md:mb-0 transform transition-all duration-500 hover:text-orange-600">
-                            © 2025 Orange Lilies (A unit of The Kutumbaka Group). All rights reserved. | Developed by
+                            © 2025 Orange Lilies (A unit of <a href='https://www.getdistributors.com/distributors/the-kutumb-group-258587/' target="_blank" rel="noopener noreferrer"><span className="text-orange-700 hover:text-orange-500 transition-colors duration-300">The Kutumbaka Group</span></a>). All rights reserved. | Developed by
                             <a href="https://pizeonfly.com/" target="_blank" rel="noopener noreferrer" className='ml-1'>
                                 <span className="text-orange-700 hover:text-orange-500 transition-colors duration-300">Pizeonfly</span>
                             </a>
