@@ -124,7 +124,7 @@ const Footer = () => {
                                 links: [
                                     { text: "Our Story", href: "/about" }, 
                                     {text:"Sustainability",href:"/sustainability"}, 
-                                    "Blog",
+                                    {text:"Policy", href:"/privacy&policy"},
                                     { text: "Reviews", href: "/home#reviews" }
                                 ]
                             },

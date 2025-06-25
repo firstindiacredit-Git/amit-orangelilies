@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Card from './Card';
@@ -52,6 +52,25 @@ const valuesList = [
 ];
 
 const About = () => {
+    const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+    const [currentImageIdx, setCurrentImageIdx] = useState(0);
+    const [zoomLevel, setZoomLevel] = useState(1);
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleImageClick = (idx) => {
+        setCurrentImageIdx(idx);
+        setIsPreviewOpen(true);
+    };
+
+    const handleZoomIn = () => setZoomLevel((z) => Math.min(z + 0.2, 3));
+    const handleZoomOut = () => setZoomLevel((z) => Math.max(z - 0.2, 0.5));
+    const handleFlip = () => setIsFlipped((f) => !f);
+
+    useEffect(() => {
+        setZoomLevel(1);
+        setIsFlipped(false);
+    }, [currentImageIdx, isPreviewOpen]);
+
     return (
         <div className="min-h-screen bg-orange-50 text-gray-800">
             <Header />
@@ -85,7 +104,7 @@ const About = () => {
 
                                 {/* Image with enhanced effects */}
                                 <img
-                                    src="Images/about.avif"
+                                    src="Images/about2.png"
                                     alt="Orange Lilies Period Panties"
                                     className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
                                     style={{ height: "23rem" }}
@@ -117,6 +136,8 @@ const About = () => {
                                         src={img.src}
                                         alt={img.alt}
                                         className="w-full h-48 object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
+                                        onClick={() => handleImageClick(idx)}
+                                        style={{ cursor: "pointer" }}
                                     />
                                 </div>
                             ))}
@@ -247,6 +268,65 @@ const About = () => {
                 </div>
             </main>
             <Footer />
+            {isPreviewOpen && (
+                <div className="fixed inset-0 flex items-center justify-center z-50" style={{backgroundColor:"#000000c2"}}>
+                    <button
+                        className="absolute top-4 right-4 text-white text-3xl"
+                        onClick={() => setIsPreviewOpen(false)}
+                    >
+                        &times;
+                    </button>
+                    <button
+                        className="absolute left-4 text-white text-3xl"
+                        onClick={() => setCurrentImageIdx((currentImageIdx - 1 + galleryImages.length) % galleryImages.length)}
+                    >
+                        &#8592;
+                    </button>
+                    <div className="flex flex-col items-center">
+                        <div className="relative">
+                            <img
+                                src={galleryImages[currentImageIdx].src}
+                                alt={galleryImages[currentImageIdx].alt}
+                                className="max-h-[80vh] max-w-[90vw] rounded-2xl shadow-2xl"
+                                style={{
+                                    transform: `scale(${zoomLevel}) scaleX(${isFlipped ? -1 : 1})`,
+                                    transition: "transform 0.3s",
+                                }}
+                            />
+                            <div className="flex justify-center gap-4 mt-4 w-full absolute left-1/2 -translate-x-1/2 bottom-2">
+                                <button
+                                    className="bg-transparent text-white px-4 py-2 rounded-full text-2xl hover:bg-white/10 focus:outline-none"
+                                    onClick={handleZoomIn}
+                                    title="Zoom In"
+                                >
+                                    ➕
+                                </button>
+                                <button
+                                    className="bg-transparent text-white px-4 py-2 rounded-full text-2xl hover:bg-white/10 focus:outline-none"
+                                    onClick={handleZoomOut}
+                                    title="Zoom Out"
+                                >
+                                    ➖
+                                </button>
+                                <button
+                                    className="bg-transparent text-white px-4 py-2 rounded-full text-2xl hover:bg-white/10 focus:outline-none"
+                                    onClick={handleFlip}
+                                    title="Flip"
+                                >
+                                    🔄
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        className="absolute right-4 text-white text-3xl"
+                        style={{ right: "1rem", left: "auto" }}
+                        onClick={() => setCurrentImageIdx((currentImageIdx + 1) % galleryImages.length)}
+                    >
+                        &#8594;
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
