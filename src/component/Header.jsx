@@ -59,8 +59,8 @@ const Header = () => {
                             <span className="text-white">Why Choose Us</span>
                         </a>
                         <div className="relative group">
-                            <a href="/home#faq" onClick={(e) => handleNavigation(e, '#faq')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1 flex items-center">
-                                <span className="text-white">FAQs</span>
+                            <a href="/contact" className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1 flex items-center">
+                                <span className="text-white">Contact Us</span>
                             </a>
                         </div>
                         <a href="https://dl.flipkart.com/s/iFfOa5NNNN" target="_blank" rel="noopener noreferrer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
