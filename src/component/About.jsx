@@ -5,50 +5,50 @@ import Card from './Card';
 import { Smile, Heart, Lightbulb, Leaf, CheckCircle, Users } from 'lucide-react';
 
 const galleryImages = [
-    { src: 'Images/Gallery-1.jpg'},
-    { src: 'Images/Gallery-2.jpg'},
-    { src: 'Images/Gallery-3.jpg'},
-    { src: 'Images/Gallery-4.jpg'},
-    { src: 'Images/Gallery-5.jpg'},
+    { src: 'Images/Gallery-1.jpg' },
+    { src: 'Images/Gallery-2.jpg' },
+    { src: 'Images/Gallery-3.jpg' },
+    { src: 'Images/Gallery-4.jpg' },
+    { src: 'Images/Gallery-5.jpg' },
 ]
 
 const valuesList = [
-  {
-    title: 'Comfort First',
-    description: 'We design every product to feel gentle, soft, and secure—so you can focus on living your life.',
-    icon: <Smile className="w-10 h-10 text-orange-500" />,
-    gradient: 'from-orange-100 to-orange-50',
-  },
-  {
-    title: 'Empowerment',
-    description: 'We believe in supporting women\'s confidence, dignity, and independence—every day of the month.',
-    icon: <Heart className="w-10 h-10 text-pink-500" />,
-    gradient: 'from-pink-100 to-orange-50',
-  },
-  {
-    title: 'Innovation',
-    description: 'We\'re always improving—bringing you the latest in period care technology and design.',
-    icon: <Lightbulb className="w-10 h-10 text-yellow-500" />,
-    gradient: 'from-yellow-100 to-orange-50',
-  },
-  {
-    title: 'Sustainability',
-    description: 'We use eco-friendly materials and responsible practices to protect our planet for future generations.',
-    icon: <Leaf className="w-10 h-10 text-green-500" />,
-    gradient: 'from-green-100 to-orange-50',
-  },
-  {
-    title: 'Quality',
-    description: 'Every product is dermatologically tested and quality-assured for your safety and peace of mind.',
-    icon: <CheckCircle className="w-10 h-10 text-blue-500" />,
-    gradient: 'from-blue-100 to-orange-50',
-  },
-  {
-    title: 'Community',
-    description: 'We\'re more than a brand—we\'re a movement for better period care, education, and support.',
-    icon: <Users className="w-10 h-10 text-purple-500" />,
-    gradient: 'from-purple-100 to-orange-50',
-  },
+    {
+        title: 'Comfort First',
+        description: 'We design every product to feel gentle, soft, and secure—so you can focus on living your life.',
+        icon: <Smile className="w-10 h-10 text-orange-500" />,
+        gradient: 'from-orange-100 to-orange-50',
+    },
+    {
+        title: 'Empowerment',
+        description: 'We believe in supporting women\'s confidence, dignity, and independence—every day of the month.',
+        icon: <Heart className="w-10 h-10 text-pink-500" />,
+        gradient: 'from-pink-100 to-orange-50',
+    },
+    {
+        title: 'Innovation',
+        description: 'We\'re always improving—bringing you the latest in period care technology and design.',
+        icon: <Lightbulb className="w-10 h-10 text-yellow-500" />,
+        gradient: 'from-yellow-100 to-orange-50',
+    },
+    {
+        title: 'Sustainability',
+        description: 'We use eco-friendly materials and responsible practices to protect our planet for future generations.',
+        icon: <Leaf className="w-10 h-10 text-green-500" />,
+        gradient: 'from-green-100 to-orange-50',
+    },
+    {
+        title: 'Quality',
+        description: 'Every product is dermatologically tested and quality-assured for your safety and peace of mind.',
+        icon: <CheckCircle className="w-10 h-10 text-blue-500" />,
+        gradient: 'from-blue-100 to-orange-50',
+    },
+    {
+        title: 'Community',
+        description: 'We\'re more than a brand—we\'re a movement for better period care, education, and support.',
+        icon: <Users className="w-10 h-10 text-purple-500" />,
+        gradient: 'from-purple-100 to-orange-50',
+    },
 ];
 
 const About = () => {
@@ -167,7 +167,7 @@ const About = () => {
                             <div className="absolute -bottom-2 left-10 w-24 h-1.5 rounded-full transform rotate-3 opacity-0 group-hover:opacity-70 transition-all duration-500 bg-orange-400"></div>
                             <div className="absolute -top-2 right-10 w-20 h-1.5 rounded-full transform -rotate-3 opacity-0 group-hover:opacity-60 transition-all duration-500 bg-orange-500"></div>
                         </div>
-                        
+
                         {/* Vision Card */}
                         <div className="group relative transform transition-all duration-500 hover:-translate-y-2">
                             <div className={
@@ -233,12 +233,14 @@ const About = () => {
                                         <img src="Images/Kanika Tomar PNG.png" alt="Founder" className="rounded-full w-28 h-28 object-cover border-4 border-orange-200 shadow" />
                                     </div>
                                     {/* Title with underline animation */}
-                                    <h4 className="font-semibold text-lg mb-2 text-orange-800 relative inline-block group-hover:text-orange-600 transition-colors duration-300 z-10">
-                                        Kanika Tomar
-                                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-300 transition-all duration-500 group-hover:w-full"></span>
+                                    <h4 className="font-semibold text-lg mb-2 text-orange-800 relative z-10 text-center w-full">
+                                        <span className="inline-block relative group-hover:text-orange-600 transition-colors duration-300">
+                                            Kanika Tomar
+                                            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-orange-300 transition-all duration-500 group-hover:w-full"></span>
+                                        </span>
                                     </h4>
-                                    <p className="text-gray-700 text-sm mb-1">Founder & CEO</p>
-                                    <p className="text-gray-600 text-xs text-center">Driven by a vision to empower women, Kanika leads Orange Lilies with passion, innovation, and a commitment to quality.</p>
+                                    <p className="text-gray-700 text-sm mb-1 text-center">Founder & CEO</p>
+                                    <p className="text-gray-600 text-xs text-center">Kanika is the visionary force behind Orange Lilies, blending innovation with compassion to create products that empower women and set new standards in quality and care.</p>
                                 </div>
                                 {/* Corner accent */}
                                 <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-transparent border-r-orange-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -253,12 +255,14 @@ const About = () => {
                                         <img src="Images/Sanam Lamba PNG.png" alt="Founder" className="rounded-full w-28 h-28 object-cover border-4 border-orange-200 shadow bg-white" />
                                     </div>
                                     {/* Title with underline animation */}
-                                    <h4 className="font-semibold text-lg mb-2 text-orange-800 relative inline-block group-hover:text-orange-600 transition-colors duration-300 z-10">
-                                        Sana Lamba
-                                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-300 transition-all duration-500 group-hover:w-full"></span>
+                                    <h4 className="font-semibold text-lg mb-2 text-orange-800 relative z-10 text-center w-full">
+                                        <span className="inline-block relative group-hover:text-orange-600 transition-colors duration-300">
+                                            Sanam Lamba
+                                            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-orange-300 transition-all duration-500 group-hover:w-full"></span>
+                                        </span>
                                     </h4>
-                                    <p className="text-gray-700 text-sm mb-1">Founder & CEO</p>
-                                    <p className="text-gray-600 text-xs text-center">Driven by a vision to empower women, Sana leads Orange Lilies with passion, innovation, and a commitment to quality.</p>
+                                    <p className="text-gray-700 text-sm mb-1 text-center">Founder & CEO</p>
+                                    <p className="text-gray-600 text-xs text-center">Sanam brings strategic insight and creative energy to Orange Lilies, building a vibrant community and driving the brand's mission to inspire confidence and positive change.</p>
                                 </div>
                                 {/* Corner accent */}
                                 <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-transparent border-r-orange-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -269,15 +273,17 @@ const About = () => {
             </main>
             <Footer />
             {isPreviewOpen && (
-                <div className="fixed inset-0 flex items-center justify-center z-50" style={{backgroundColor:"#000000c2"}}>
+                <div className="fixed inset-0 flex items-center justify-center z-50" style={{ backgroundColor: "#000000c2" }}>
                     <button
                         className="absolute top-4 right-4 text-white text-3xl"
+                        style={{ backgroundColor: "black" }}
                         onClick={() => setIsPreviewOpen(false)}
                     >
                         &times;
                     </button>
                     <button
                         className="absolute left-4 text-white text-3xl"
+                        style={{ backgroundColor: "black" }}
                         onClick={() => setCurrentImageIdx((currentImageIdx - 1 + galleryImages.length) % galleryImages.length)}
                     >
                         &#8592;
@@ -296,6 +302,7 @@ const About = () => {
                             <div className="flex justify-center gap-4 mt-4 w-full absolute left-1/2 -translate-x-1/2 bottom-2">
                                 <button
                                     className="bg-transparent text-white px-4 py-2 rounded-full text-2xl hover:bg-white/10 focus:outline-none"
+                                    style={{ backgroundColor: "black" }}
                                     onClick={handleZoomIn}
                                     title="Zoom In"
                                 >
@@ -303,6 +310,7 @@ const About = () => {
                                 </button>
                                 <button
                                     className="bg-transparent text-white px-4 py-2 rounded-full text-2xl hover:bg-white/10 focus:outline-none"
+                                    style={{ backgroundColor: "black" }}
                                     onClick={handleZoomOut}
                                     title="Zoom Out"
                                 >
@@ -310,6 +318,7 @@ const About = () => {
                                 </button>
                                 <button
                                     className="bg-transparent text-white px-4 py-2 rounded-full text-2xl hover:bg-white/10 focus:outline-none"
+                                    style={{ backgroundColor: "black" }}
                                     onClick={handleFlip}
                                     title="Flip"
                                 >
@@ -320,7 +329,7 @@ const About = () => {
                     </div>
                     <button
                         className="absolute right-4 text-white text-3xl"
-                        style={{ right: "1rem", left: "auto" }}
+                        style={{ right: "1rem", left: "auto", backgroundColor: "black" }}
                         onClick={() => setCurrentImageIdx((currentImageIdx + 1) % galleryImages.length)}
                     >
                         &#8594;
