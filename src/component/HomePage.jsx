@@ -29,7 +29,7 @@ const HomePage = () => {
             <Header />
 
             {/* Hero Section with Enhanced Animations and Hover Effects */}
-            <section id="hero" className="md:ml-25 py-32 md:py-40 px-4 sm:px-6 md:px-12 flex flex-col md:flex-row bg-gradient-to-br from-white to-orange-50 relative overflow-hidden">
+            <section id="hero" className="md:ml-15 py-20 sm:py-28 md:py-40 px-4 sm:px-8 md:px-12 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-white to-orange-50 relative overflow-hidden">
                 {/* Enhanced Animated Background Elements */}
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
@@ -38,14 +38,14 @@ const HomePage = () => {
                 <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-orange-400 rounded-full animate-ping opacity-70"></div>
                 <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-orange-500 rounded-full animate-ping opacity-70 animation-delay-1000"></div>
 
-                {/* Text Content Side with Enhanced Animations */}
-                <div className="w-full md:w-1/2 mb-12 md:mb-0 pr-0 md:pr-8 z-10 transform transition-all duration-700 hover:translate-x-2 group">
-                    <div className="relative">
+                {/* Text Content Side */}
+                <div className="w-full max-w-2xl flex flex-col items-center md:items-start text-center md:text-left z-10 mb-10 md:mb-0 md:pr-8">
+                    <div className="relative w-full">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-orange-500 leading-tight relative">
                             <span className="inline-block transform transition-all duration-500 hover:text-orange-600 hover:scale-105">
                                 <span className="font-serif font-bold italic">Orange Lilies</span> Disposable Panties</span>
                             <br />
-                            <div className="h-1 w-24 bg-orange-400 mt-4 rounded-full transform transition-all duration-500 group-hover:w-40"></div>
+                            <div className="h-1 w-24 bg-orange-400 mt-4 rounded-full transform transition-all duration-500 group-hover:w-40 mx-auto md:mx-0"></div>
                         </h2>
 
                         <p className="text-base sm:text-lg mb-6 text-gray-600 leading-relaxed animate-fadeIn group-hover:text-gray-700 transition-colors duration-300">
@@ -63,7 +63,7 @@ const HomePage = () => {
                         </p>
 
                         {/* Enhanced buttons with more animations */}
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                             <a
                                 href="https://dl.flipkart.com/s/iFfOa5NNNN"
                                 target="_blank"
@@ -81,15 +81,13 @@ const HomePage = () => {
                                 <span className="relative z-10">Learn More</span>
                                 <span className="ml-1 relative z-10 inline-block transition-all duration-300 group-hover:translate-x-3">→</span>
                             </a>
-
-
                         </div>
                     </div>
                 </div>
 
-                {/* Image Side with Enhanced Effects */}
-                <div className="w-full md:w-1/2 flex justify-center z-10 relative group">
-                    <div className="relative p-2 max-w-[300px] md:max-w-[450px] mx-auto">
+                {/* Image Side */}
+                <div className="w-full flex justify-center z-10 relative group md:w-1/2">
+                    <div className="relative p-2 w-full max-w-[90vw] sm:max-w-[300px] md:max-w-[450px] mx-auto">
                         {/* Animated border */}
                         <div className="absolute inset-0 p-1">
                             <div className="h-full w-full rounded-lg border-2 border-dashed border-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -106,8 +104,7 @@ const HomePage = () => {
                         <img
                             src="Images/hero.jpg"
                             alt="Orange Lilies Period Panties"
-                            className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
-                            style={{ height: "24rem" }}
+                            className="rounded-lg shadow-lg w-full h-auto max-h-[18rem] sm:max-h-[22rem] md:max-h-[24rem] bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
                         />
 
                         {/* Enhanced floating elements - smaller */}
