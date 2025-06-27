@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 const HomePage = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
+    const [showVideoModal, setShowVideoModal] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -175,9 +176,9 @@ const HomePage = () => {
                             </div> */}
                         </div>
 
-                        {/* Image Side with Enhanced Effects */}
+                        {/* Video Side with Enhanced Effects */}
                         <div className="w-full md:w-1/2 flex justify-center z-10 relative group">
-                            <div className="relative p-2 max-w-[300px] md:max-w-[450px] mx-auto">
+                            <div className="relative p-2 max-w-[500px] md:max-w-[700px] mx-auto">
                                 {/* Animated border */}
                                 <div className="absolute inset-0 p-1">
                                     <div className="h-full w-full rounded-lg border-2 border-dashed border-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -190,12 +191,18 @@ const HomePage = () => {
                                 <div className="absolute top-0 left-0 w-0 h-0 border-t-2 border-l-2 border-orange-500 rounded-tl-lg transition-all duration-500 group-hover:w-10 group-hover:h-10 opacity-0 group-hover:opacity-100"></div>
                                 <div className="absolute bottom-0 right-0 w-0 h-0 border-b-2 border-r-2 border-orange-500 rounded-br-lg transition-all duration-500 group-hover:w-10 group-hover:h-10 opacity-0 group-hover:opacity-100"></div>
 
-                                {/* Image with enhanced effects */}
-                                <img
-                                    src="Images/about.avif"
+                                {/* Video with enhanced effects */}
+                                <video
+                                    src="Images/Video.mp4"
                                     alt="Orange Lilies Period Panties"
-                                    className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
-                                    style={{ height: "23rem" }}
+                                    className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40 cursor-pointer"
+                                    style={{ height: "20rem" }}
+                                    loop
+                                    muted
+                                    playsInline
+                                    autoPlay
+                                    controlsList="nodownload noplaybackrate nofullscreen"
+                                    onClick={() => setShowVideoModal(true)}
                                 />
 
                                 {/* Enhanced floating elements - smaller */}
@@ -203,10 +210,27 @@ const HomePage = () => {
                                 <div className="absolute bottom-0 left-0 transform translate-x-3 translate-y-3 w-8 h-8 bg-orange-200 rounded-full opacity-0 group-hover:opacity-60 transition-all duration-500 blur-sm"></div>
                                 <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-orange-300 rounded-full opacity-60 z-0 transition-transform duration-500 group-hover:scale-125 group-hover:opacity-30"></div>
                             </div>
+
                         </div>
+
+                    </div>
+                    {/* About Redirect Button - placed just below Video Side with Enhanced Effects */}
+                    <div className="w-full flex justify-center mt-6 mb-10">
+                        <a
+                            href="/about"
+                            style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                            className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                        >
+                            <span className="relative z-10 text-white">Learn More About Us</span>
+                            <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                            <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                            {/* Animated sparkle effect */}
+                            <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                        </a>
                     </div>
                 </div>
             </section>
+
 
             {/* Distributorship Section */}
             <section id="distributorship" className="py-16 md:py-20 px-8 sm:px-12 md:px-24 lg:px-32 bg-gradient-to-br from-orange-100/50 to-white relative overflow-hidden">
@@ -254,7 +278,7 @@ const HomePage = () => {
 
                         <div className="space-y-6">
                             <div className="bg-white p-6 rounded-xl shadow-lg">
-                                <h3 className="text-xl font-semibold text-orange-600 mb-4">Partner Benefits</h3>
+                                <h3 className="text-xl font-semibold text-orange-600 mb-4">Distributor Benefits</h3>
                                 <ul className="space-y-3">
                                     <li className="flex items-start">
                                         <span className="text-orange-500 mr-2">✔</span>
@@ -283,7 +307,7 @@ const HomePage = () => {
                                     style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
                                     className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
                                 >
-                                    <span className="relative z-10 text-white">Contact Us for Partnership</span>
+                                    <span className="relative z-10 text-white">Contact Us for Distributorship</span>
                                     <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
                                     <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
                                     {/* Animated sparkle effect */}
@@ -363,7 +387,8 @@ const HomePage = () => {
                             </h4>
                             <ul className="space-y-4 relative z-10">
                                 {[
-                                    "Unpack the sealed disposable panty.",
+                                    // "Unpack the sealed disposable panty.",
+                                    "Facing the stripes in front.",
                                     "Slip it on like regular underwear—no Panties or tampons needed.",
                                     "Stay protected with its snug fit and 360° leak guard for all-day comfort."
                                 ].map((step, index) => (
@@ -449,17 +474,17 @@ const HomePage = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
                         {[
                             {
-                                name: "Sarah J.",
+                                name: "Monika",
                                 review: "These panties have changed my period experience completely. So comfortable and reliable - I won't use anything else now!",
                                 color: "orange"
                             },
                             {
-                                name: "Mia L.",
+                                name: "Poonam",
                                 review: "I have very sensitive skin and these are the only panties that don't cause irritation. Plus, they're super absorbent!",
                                 color: "pink"
                             },
                             {
-                                name: "Rachel W.",
+                                name: "Dolly",
                                 review: "After trying so many brands, I finally found Orange Lilies. They're amazingly comfortable and I feel secure all day.",
                                 color: "blue"
                             }
@@ -593,31 +618,32 @@ const HomePage = () => {
                     <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto">
                         {/* Image side with effects */}
                         <div className="w-full md:w-1/2 mb-12 md:mb-0 group perspective-1000">
-                            <div className="relative mx-auto max-w-[250px] md:max-w-[350px] transform transition-all duration-700 group-hover:rotate-y-3 group-hover:scale-105">
+                            <div className="relative mx-auto max-w-[320px] md:max-w-[420px] min-h-[340px] md:min-h-[420px] transform transition-all duration-700 group-hover:rotate-y-3 group-hover:scale-105">
                                 {/* Image container with effects */}
-                                <div className="relative p-3">
+                                <div className="relative p-3" style={{ minHeight: "320px", minWidth: "260px" }}>
                                     {/* Animated border */}
                                     <div className="absolute inset-0 p-2 rounded-lg">
                                         <div className="h-full w-full rounded-lg border-2 border-dashed border-orange-300/50 opacity-50 group-hover:opacity-100 transition-all duration-500"></div>
                                     </div>
 
-                                    {/* Glow effect - smaller */}
+                                    {/* Glow effect - larger */}
                                     <div className="absolute -inset-1 bg-gradient-to-r from-orange-300/30 to-orange-500/30 rounded-xl blur opacity-0 group-hover:opacity-75 transition-all duration-500 group-hover:animate-pulse"></div>
 
-                                    {/* Corner accents - smaller */}
-                                    <div className="absolute top-0 left-0 w-0 h-0 border-t-2 border-l-2 border-orange-400 rounded-tl-lg transition-all duration-500 group-hover:w-12 group-hover:h-12 opacity-0 group-hover:opacity-100"></div>
-                                    <div className="absolute bottom-0 right-0 w-0 h-0 border-b-2 border-r-2 border-orange-400 rounded-br-lg transition-all duration-500 group-hover:w-12 group-hover:h-12 opacity-0 group-hover:opacity-100"></div>
+                                    {/* Corner accents - larger */}
+                                    <div className="absolute top-0 left-0 w-0 h-0 border-t-2 border-l-2 border-orange-400 rounded-tl-lg transition-all duration-500 group-hover:w-16 group-hover:h-16 opacity-0 group-hover:opacity-100"></div>
+                                    <div className="absolute bottom-0 right-0 w-0 h-0 border-b-2 border-r-2 border-orange-400 rounded-br-lg transition-all duration-500 group-hover:w-16 group-hover:h-16 opacity-0 group-hover:opacity-100"></div>
 
                                     {/* Image */}
                                     <img
                                         src="Images/showcase.jpg"
                                         alt="Orange Lilies Product Range"
-                                        className="rounded-lg shadow-lg w-full h-auto relative z-10 transition-all duration-500 group-hover:shadow-xl group-hover:shadow-orange-300/30"
+                                        className="rounded-lg shadow-lg w-full h-[320px] md:h-[400px] object-cover relative z-10 transition-all duration-500 group-hover:shadow-xl group-hover:shadow-orange-300/30"
+                                        style={{ minWidth: "260px", maxWidth: "100%", objectFit: "cover" }}
                                     />
 
-                                    {/* Floating circles - smaller */}
-                                    <div className="absolute -top-3 -right-3 w-10 h-10 bg-orange-200/40 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                                    <div className="absolute -bottom-3 -left-3 w-8 h-8 bg-orange-300/40 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                                    {/* Floating circles - larger */}
+                                    <div className="absolute -top-4 -right-4 w-14 h-14 bg-orange-200/40 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                                    <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-orange-300/40 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                                 </div>
                             </div>
                         </div>
@@ -629,7 +655,7 @@ const HomePage = () => {
                                     title: "Superior Absorbency",
                                     description: "Our multi-layered design keeps you dry and comfortable for up to 12 hours, even on your heaviest days.",
                                     icon: (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                                         </svg>
                                     )
@@ -638,7 +664,7 @@ const HomePage = () => {
                                     title: "Breathable Cotton Cover",
                                     description: "Soft, hypoallergenic cotton top layer feels gentle against your skin while allowing air circulation.",
                                     icon: (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                                         </svg>
                                     )
@@ -647,7 +673,7 @@ const HomePage = () => {
                                     title: "Secure Fit Technology",
                                     description: "Unique wing design and adhesive backing ensure your Panties stays in place, no matter how active your day.",
                                     icon: (
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
                                     )
@@ -655,7 +681,8 @@ const HomePage = () => {
                             ].map((feature, index) => (
                                 <div
                                     key={index}
-                                    className="group bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-500 transform hover:translate-x-1 hover:-translate-y-1 relative overflow-hidden"
+                                    className="group bg-gradient-to-br from-orange-50 to-orange-100/50 p-7 rounded-xl shadow-sm hover:shadow-md transition-all duration-500 transform hover:translate-x-1 hover:-translate-y-1 relative overflow-hidden min-h-[120px]"
+                                    style={{ minWidth: "260px" }}
                                 >
                                     {/* Background pattern */}
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-orange-50 via-orange-100/30 to-orange-50 z-0"></div>
@@ -663,7 +690,7 @@ const HomePage = () => {
                                     {/* Content */}
                                     <div className="flex items-start relative z-10">
                                         {/* Icon */}
-                                        <div className="mr-4 p-2.5 bg-orange-200/70 group-hover:bg-orange-300/80 text-orange-600 rounded-lg transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-3 flex-shrink-0">
+                                        <div className="mr-4 p-3 bg-orange-200/70 group-hover:bg-orange-300/80 text-orange-600 rounded-lg transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-3 flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center">
                                             {feature.icon}
                                         </div>
 
@@ -682,7 +709,7 @@ const HomePage = () => {
                                     </div>
 
                                     {/* Decorative corner accent */}
-                                    <div className="absolute -bottom-6 -right-6 w-12 h-12 bg-orange-200/40 rounded-full transform scale-0 group-hover:scale-100 transition-all duration-500"></div>
+                                    <div className="absolute -bottom-8 -right-8 w-16 h-16 bg-orange-200/40 rounded-full transform scale-0 group-hover:scale-100 transition-all duration-500"></div>
                                 </div>
                             ))}
 
@@ -719,7 +746,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Product Features */}
+            {/* Available Sizes */}
             <section className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-white relative overflow-hidden">
                 {/* Background decoration */}
                 <div className="absolute inset-0 bg-gradient-to-b from-white to-orange-50/30 z-0"></div>
@@ -730,12 +757,12 @@ const HomePage = () => {
                     <div className="text-center mb-16">
                         <div>
                             <div className="inline-block relative mb-3">
-                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Comfortable & Reliable</h3>
+                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Available Sizes</h3>
                                 <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
                             </div>
                         </div>
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600 relative inline-block group">
-                            <span className="relative z-10">Stay worry-free with Orange Lilies™</span>
+                            <span className="relative z-10">Find Your Perfect Fit – 4 Sizes for Every Body</span>
                             <span className="absolute bottom-0 left-0 w-full h-2 bg-orange-100 transform origin-left transition-transform duration-500 scale-x-0 group-hover:scale-x-100"></span>
                         </h2>
                     </div>
@@ -743,38 +770,38 @@ const HomePage = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 max-w-6xl mx-auto">
                         {[
                             {
-                                title: "Ultra-Thin & Secure",
-                                description: "Discreet protection that moves with your body.",
+                                title: "S - M",
+                                description: "Waist 24-30 inches. Ideal for teens and petite women who prefer a snug, comfortable fit for everyday use.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        <circle cx="12" cy="12" r="6" strokeWidth="2" />
                                     </svg>
                                 )
                             },
                             {
-                                title: "12-hour Protection",
-                                description: "Stay confident with all-day coverage.",
+                                title: "M - L",
+                                description: "Waist 28-34 inches. Perfect for most women, offering a balance of comfort and flexibility for active days.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                                        <rect x="6" y="6" width="12" height="12" rx="3" strokeWidth="2" />
                                     </svg>
                                 )
                             },
                             {
-                                title: "Hypoallergenic",
-                                description: "Gentle on even the most sensitive skin.",
+                                title: "XL - XXL",
+                                description: "Waist 32-40 inches. Great for those who want extra room and comfort, especially during heavy flow or overnight.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+                                        <polygon points="12,4 20,20 4,20" strokeWidth="2" />
                                     </svg>
                                 )
                             },
                             {
-                                title: "Odor Control",
-                                description: "Stay fresh with advanced odor neutralizing technology.",
+                                title: "XXL - XXXL",
+                                description: "Waist 38-46 inches. Designed for plus-size comfort, ensuring a secure and gentle fit for all-day confidence.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        <path d="M12 4a8 8 0 110 16 8 8 0 010-16zm0 0v16m8-8H4" strokeWidth="2" />
                                     </svg>
                                 )
                             }
@@ -850,7 +877,7 @@ const HomePage = () => {
                                 </div>
 
                                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-orange-600 group">
-                                    <span className="inline-block transform transition-all duration-500 hover:translate-x-1">Comfort That Saves</span>
+                                    <span className="inline-block transform transition-all duration-500 hover:translate-x-1">Confidence of Freshness</span>
                                 </h2>
 
                                 <div className="mb-6">
@@ -861,12 +888,12 @@ const HomePage = () => {
                                     Get 5 high-absorbency, disposable period panties in one pack. Orange Lilies™ offers premium comfort, leak protection, and convenience—all at an affordable price.
                                 </p>
 
-                                <div className="mb-6 sm:mb-8 bg-orange-100/70 p-4 rounded-lg border border-orange-200 transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg">
-                                    {/* <div className="font-bold text-orange-800 mb-2 text-base sm:text-lg">Use Code: <span className="bg-orange-500 text-white px-3 py-1 rounded-md ml-2 tracking-wider">FIRST15</span></div> */}
+                                {/* <div className="mb-6 sm:mb-8 bg-orange-100/70 p-4 rounded-lg border border-orange-200 transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg">
+                                    <div className="font-bold text-orange-800 mb-2 text-base sm:text-lg">Use Code: <span className="bg-orange-500 text-white px-3 py-1 rounded-md ml-2 tracking-wider">FIRST15</span></div>
                                     <p className="text-sm sm:text-base text-gray-700">
                                         Enjoy 15% off on your first purchase of Orange Lilies™ Disposable Panties. Comfort, protection, and savings—all in one pack!
                                     </p>
-                                </div>
+                                </div> */}
 
                                 <p className="text-gray-600 italic mb-6 text-sm sm:text-base">Say goodbye to leaks and hello to peace of mind.</p>
                             </div>
@@ -875,7 +902,7 @@ const HomePage = () => {
                             <div className="flex flex-col justify-center items-center bg-gradient-to-br from-orange-100/70 to-orange-200/50 p-5 sm:p-6 md:p-8 rounded-xl border border-orange-200/40">
                                 <div className="text-center mb-6">
                                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-orange-600 mb-3">Orange Lilies™</h3>
-                                    <p className="text-base sm:text-lg text-orange-700 italic">– Confidence of Freshness</p>
+                                    {/* <p className="text-base sm:text-lg text-orange-700 italic">– Confidence of Freshness</p> */}
                                     <div className="w-16 h-1 bg-orange-400 mx-auto my-4 rounded-full"></div>
                                     <p className="text-sm sm:text-base text-gray-700 mb-6">
                                         Experience the next level of period care with our disposable panties.
@@ -888,12 +915,53 @@ const HomePage = () => {
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 to-transparent"></div>
                                     </div>
-                                    <p className="mt-4 text-sm sm:text-base text-orange-700 font-medium">
-                                        Coming soon to select stores and online! Stay tuned for the comfort you've been waiting for.
-                                    </p>
+                                    <div className="mt-4 flex flex-col gap-2">
+                                        <p className="text-sm sm:text-base text-orange-700 font-medium">
+                                            Available on:
+                                        </p>
+                                        <div className="flex flex-wrap gap-3 justify-center items-center">
+                                            <a
+                                                href="https://dl.flipkart.com/s/iFfOa5NNNN"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-4 py-2 bg-white border border-orange-200 rounded-full shadow-sm hover:bg-orange-50 transition-colors duration-200"
+                                            >
+                                                <img src="https://th.bing.com/th/id/ODLS.15c40f0d-f8f2-4f54-8634-d85dc09bdc14?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Flipkart" className="h-5 w-5 mr-2" />
+                                                <span className="text-orange-700 font-semibold">Flipkart</span>
+                                            </a>
+                                            <a
+                                                href="https://amzn.in/d/fSGOxXf"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-4 py-2 bg-white border border-orange-200 rounded-full shadow-sm hover:bg-orange-50 transition-colors duration-200"
+                                            >
+                                                <img src="https://th.bing.com/th/id/ODLS.138c18e4-2630-47fe-9d68-bace59c385c6?w=32&h=32&o=6&pid=AdsPlus" alt="Amazon" className="h-5 w-5 mr-2" />
+                                                <span className="text-orange-700 font-semibold">Amazon</span>
+                                            </a>
+                                            <div
+                                                className="inline-flex items-center px-4 py-2 bg-white border border-orange-200 rounded-full shadow-sm opacity-60 cursor-not-allowed"
+                                                title="Currently unavailable"
+                                                style={{ pointerEvents: "none" }}
+                                            >
+                                                <img src="https://th.bing.com/th/id/ODLS.9e84324b-41ef-46af-9d64-c04e85988762?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Meesho" className="h-5 w-5 mr-2" />
+                                                <span className="text-orange-700 font-semibold">Meesho</span>
+                                            </div>
+                                            <div
+                                                className="inline-flex items-center px-4 py-2 bg-white border border-orange-200 rounded-full shadow-sm opacity-60 cursor-not-allowed"
+                                                title="Currently unavailable"
+                                                style={{ pointerEvents: "none" }}
+                                            >
+                                                <img src="https://th.bing.com/th/id/ODLS.724acf04-7f66-41be-93d9-c5337763cf6b?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Nykaa" className="h-5 w-5 mr-2" />
+                                                <span className="text-orange-700 font-semibold">Nykaa</span>
+                                            </div>
+                                        </div>
+                                        <p className="text-xs text-gray-500 mt-2">
+                                            Also coming soon to select stores near you!
+                                        </p>
+                                    </div>
                                 </div>
 
-                                <a
+                                {/* <a
                                     href="https://dl.flipkart.com/s/iFfOa5NNNN"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -902,11 +970,10 @@ const HomePage = () => {
                                         <span className="relative z-10 group-hover:text-white transition-colors duration-300">Shop Now</span>
                                         <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-orange-600 to-orange-600 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
 
-                                        {/* Button effects */}
                                         <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover:translate-x-full group-hover:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
                                         <span className="absolute bottom-0 right-0 w-20 h-20 bg-white/20 rounded-full translate-x-full translate-y-1/2 group-hover:-translate-x-full group-hover:-translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
                                     </button>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -914,8 +981,7 @@ const HomePage = () => {
             </section>
 
             {/* Service Benefits */}
-            <section className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
-                {/* Background decoration */}
+            {/* <section className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-orange-200/20 blur-3xl rounded-full"></div>
                 <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-orange-300/10 blur-3xl rounded-full"></div>
 
@@ -930,13 +996,7 @@ const HomePage = () => {
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600 relative inline-block">
                             <span className="relative">
                                 Enjoy The Soothing Service
-                                {/* <span className="text-orange-500 relative mx-2">
-                                    Soothing
-                                    <svg className="absolute -bottom-1 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#ffedd5" opacity=".6" className="shape-fill"></path>
-                                    </svg>
-                                </span>
-                                Service */}
+                               
                             </span>
                         </h2>
                     </div>
@@ -975,35 +1035,27 @@ const HomePage = () => {
                             }
                         ].map((service, index) => (
                             <div key={index} className="group relative">
-                                {/* Card with hover effects */}
                                 <div className={`bg-white p-8 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-500 relative overflow-hidden h-full transform group-hover:-translate-y-2 group-hover:translate-x-1`}>
-                                    {/* Gradient overlay */}
                                     <div className={`absolute inset-0 bg-gradient-to-br from-${service.color}-50/0 to-${service.color}-100/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
-                                    {/* Icon with animation */}
                                     <div className={`w-20 h-20 bg-${service.color}-100 group-hover:bg-${service.color}-200 rounded-full flex items-center justify-center mx-auto mb-5 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-${service.color}-200/30 relative z-10`}>
-                                        {/* Animated pulse rings */}
                                         <div className={`absolute inset-0 rounded-full border-2 border-${service.color}-200 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700`}></div>
                                         <div className={`absolute inset-0 rounded-full border-2 border-${service.color}-200 opacity-0 group-hover:opacity-70 group-hover:scale-125 transition-all duration-1000 delay-100`}></div>
 
-                                        {/* Icon */}
                                         <div className="transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
                                             {service.icon}
                                         </div>
                                     </div>
 
-                                    {/* Title with underline animation */}
                                     <h4 className={`font-semibold text-lg mb-4 text-${service.color}-800 relative inline-block group-hover:text-${service.color}-600 transition-colors duration-300 z-10`}>
                                         {service.title}
                                         <span className={`absolute bottom-0 left-0 w-0 h-0.5 bg-${service.color}-300 transition-all duration-500 group-hover:w-full`}></span>
                                     </h4>
 
-                                    {/* Description */}
                                     <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 relative z-10">
                                         {service.description}
                                     </p>
 
-                                    {/* Hidden learn more link that appears on hover */}
                                     <div className="mt-5 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 relative z-10">
                                         <a href="#" className={`text-${service.color}-500 font-medium inline-flex items-center group/link`}>
                                             <span>Learn more</span>
@@ -1014,13 +1066,12 @@ const HomePage = () => {
                                     </div>
                                 </div>
 
-                                {/* Corner accent */}
                                 <div className={`absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-transparent border-r-${service.color}-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                             </div>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FAQs */}
             <section id="faq" className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100/50 relative overflow-hidden">
@@ -1056,10 +1107,7 @@ const HomePage = () => {
                                 question: "Are Orange Lilies Panties suitable for sensitive skin?",
                                 answer: "Yes! Our Panties are hypoallergenic and dermatologically tested, making them ideal for those with sensitive skin. They're free from harsh chemicals, fragrances, and dyes that can cause irritation."
                             },
-                            {
-                                question: "Do you offer different absorbencies?",
-                                answer: "Absolutely. Our range includes light, regular, heavy, and overnight absorbencies to suit your needs throughout your cycle."
-                            },
+
                             {
                                 question: "Can I swim with your Panties?",
                                 answer: "Our Panties are not designed for swimming. For water activities, we recommend using tampons or menstrual cups."
@@ -1231,6 +1279,28 @@ const HomePage = () => {
                 animation: float-slow 6s ease-in-out infinite;
               }
             `}</style>
+
+            {/* Video Preview Modal */}
+            {showVideoModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60" onClick={() => setShowVideoModal(false)}>
+                    <div className="bg-white rounded-lg shadow-lg p-4 relative max-w-2xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
+                        <button
+                            className="absolute top-2 right-2 text-gray-600 hover:text-orange-500 text-2xl font-bold z-50 p-2 bg-white/80 rounded-full shadow"
+                            style={{ lineHeight: 1, width: '2.5rem', height: '2.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                            onClick={() => setShowVideoModal(false)}
+                            aria-label="Close preview"
+                        >
+                            &times;
+                        </button>
+                        <video
+                            src="Images/Video.mp4"
+                            controls
+                            autoPlay
+                            style={{ maxHeight: '70vh', width: '100%' }}
+                        />
+                    </div>
+                </div>
+            )}
 
         </div>
     );

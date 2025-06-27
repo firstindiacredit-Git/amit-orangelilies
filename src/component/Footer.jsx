@@ -102,21 +102,22 @@ const Footer = () => {
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-5">
                         {[
                             {
-                                title: "Shop",
+                                title: "Size",
                                 links: [
-                                    { text: "All Products", href: "https://dl.flipkart.com/s/iF9TO8NNNN" },
-                                    { text: "Bestsellers", href: "https://dl.flipkart.com/s/iFGaqbNNNN" },
-                                    { text: "New Arrivals", href: "https://dl.flipkart.com/s/iF9TO8NNNN" },
-                                    { text: "Bundles & Kits", href: "https://dl.flipkart.com/s/iFGaqbNNNN" }
+                                    { text: "S - M", href: "https://amzn.in/d/5txdNfr" },
+                                    { text: "M - L", href: "https://amzn.in/d/5SllMbz" },
+                                    { text: "XL - XXL", href: "https://amzn.in/d/fSGOxXf" },
+                                    { text: "XXL - XXXL", href: "https://amzn.in/d/1vlETtt" }
                                 ]
                             },
                             {
                                 title: "Help",
                                 links: [
                                     { text: "FAQs", href: "/home#faq" },
-                                    { text: "Shipping & Returns", href: "/shipping" },
+                                    // { text: "Shipping & Returns", href: "/shipping" },
                                     { text: "Care Instructions", href: "/home#care" },
-                                    { text: "Contact Us", href: "/contact" }
+                                    { text: "Contact Us", href: "/contact" },
+                                    { text: "Reviews", href: "/home#reviews" }
                                 ]
                             },
                             {
@@ -125,7 +126,8 @@ const Footer = () => {
                                     { text: "Our Story", href: "/about" }, 
                                     {text:"Sustainability",href:"/sustainability"}, 
                                     {text:"Policy", href:"/privacy&policy"},
-                                    { text: "Reviews", href: "/home#reviews" }
+                                    {text:"Terms of Service", href:"/termsofservice"},
+                                    
                                 ]
                             },
                             {
@@ -134,7 +136,7 @@ const Footer = () => {
                                     { text: "info@orangelilies.com", href: "mailto:info@orangelilies.com" },
                                     { text: "+91-8368615088", href: "https://api.whatsapp.com/send?phone=918368615088" },
                                     { text: "E 44 Okhla phase 2, Delhi 110020", href: "https://www.google.com/maps/place/Orange+Lilies/@28.5356781,77.2679603,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1a06e1bd4e3:0x74f32ec86992116f!8m2!3d28.5356734!4d77.2705352!16s%2Fg%2F11mdp4p2xb?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" },
-                                    { text: "The Kutumb group is ISO 9001:2015 certified", href: "https://www.getdistributors.com/distributors/the-kutumb-group-258587/" }
+                                    { text: "The Kutumb group is ISO 9001:2015 GMP Certified", href: "https://www.getdistributors.com/distributors/the-kutumb-group-258587/" }
                                 ]
                             }
                         ].map((category, index) => (
@@ -200,7 +202,7 @@ const Footer = () => {
                     {/* Bottom section */}
                     <div className="pt-4 border-t border-orange-300 flex flex-col md:flex-row justify-between items-center">
                         <p className="text-orange-700 text-xs mb-2 md:mb-0 transform transition-all duration-500 hover:text-orange-600">
-                            © 2025 Orange Lilies (A unit of <a href='https://www.getdistributors.com/distributors/the-kutumb-group-258587/' target="_blank" rel="noopener noreferrer"><span className="text-orange-700 hover:text-orange-500 transition-colors duration-300">The Kutumbaka Group</span></a>). All rights reserved. | Developed by
+                            © 2025 Orange Lilies (A unit of <a href='https://www.getdistributors.com/distributors/the-kutumb-group-258587/' target="_blank" rel="noopener noreferrer"><span className="text-orange-700 hover:text-orange-500 transition-colors duration-300">The Kutumb Group</span></a>). All rights reserved. | Developed by
                             <a href="https://pizeonfly.com/" target="_blank" rel="noopener noreferrer" className='ml-1'>
                                 <span className="text-orange-700 hover:text-orange-500 transition-colors duration-300">Pizeonfly</span>
                             </a>
@@ -209,7 +211,7 @@ const Footer = () => {
                             {[
                                 { label: "Privacy Policy", href: "/privacy&policy" },
                                 { label: "Terms of Service", href: "/termsofservice" },
-                                { label: "Shipping Policy", href: "/shipping" }
+                                // { label: "Shipping Policy", href: "/shipping" }
                             ].map((policy, index) => (
                                 <a
                                     key={index}

@@ -78,7 +78,7 @@ const ContactPage = () => {
                         <div className="w-full md:w-1/2 flex justify-center">
                             <div className="relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <img
-                                    src="/Images/box.jpg"
+                                    src="/Images/contact2.jpg"
                                     alt="Orange Lilies Product"
                                     className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
                                 />

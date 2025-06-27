@@ -49,6 +49,9 @@ const Header = () => {
                     </div>
                     {/* Navigation on the right - Desktop */}
                     <nav className="hidden md:flex items-center space-x-8">
+                        <a href="/home#hero" onClick={(e) => handleNavigation(e, '#hero')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
+                            <span className="text-white">Home</span>
+                        </a>
                         <a href="/about" className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
                             <span className="text-white">About</span>
                         </a>

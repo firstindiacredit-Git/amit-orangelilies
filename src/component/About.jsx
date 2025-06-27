@@ -228,10 +228,6 @@ const About = () => {
                                 <div className="bg-white p-8 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-500 relative overflow-hidden h-full transform group-hover:-translate-y-2 group-hover:translate-x-1">
                                     {/* Gradient overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-orange-50/0 to-orange-100/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                    {/* Icon with animation */}
-                                    <div className="w-32 h-32 bg-orange-100 group-hover:bg-orange-200 rounded-full flex items-center justify-center mx-auto mb-5 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-orange-200/30 relative z-10">
-                                        <img src="Images/Kanika Tomar PNG.png" alt="Founder" className="rounded-full w-28 h-28 object-cover border-4 border-orange-200 shadow" />
-                                    </div>
                                     {/* Title with underline animation */}
                                     <h4 className="font-semibold text-lg mb-2 text-orange-800 relative z-10 text-center w-full">
                                         <span className="inline-block relative group-hover:text-orange-600 transition-colors duration-300">
@@ -240,7 +236,11 @@ const About = () => {
                                         </span>
                                     </h4>
                                     <p className="text-gray-700 text-sm mb-1 text-center">Founder & CEO</p>
-                                    <p className="text-gray-600 text-xs text-center">Kanika is the visionary force behind Orange Lilies, blending innovation with compassion to create products that empower women and set new standards in quality and care.</p>
+                                    <p className="text-gray-600 text-xs text-center">
+                                        Kanika is the visionary force behind Orange Lilies, blending innovation with compassion to create products that empower women and set new standards in quality and care. 
+                                        <br /><br />
+                                        With a background in product development and a deep understanding of women's needs, Kanika is dedicated to breaking taboos around menstrual health. She believes in making period care accessible, dignified, and comfortable for all. Her leadership inspires the team to always put women first, ensuring that every product reflects empathy, quality, and empowerment.
+                                    </p>
                                 </div>
                                 {/* Corner accent */}
                                 <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-transparent border-r-orange-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -250,10 +250,6 @@ const About = () => {
                                 <div className="bg-white p-8 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-500 relative overflow-hidden h-full transform group-hover:-translate-y-2 group-hover:translate-x-1">
                                     {/* Gradient overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-orange-50/0 to-orange-100/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                    {/* Icon with animation */}
-                                    <div className="w-32 h-32 bg-orange-100 group-hover:bg-orange-200 rounded-full flex items-center justify-center mx-auto mb-5 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-orange-200/30 relative z-10">
-                                        <img src="Images/Sanam Lamba PNG.png" alt="Founder" className="rounded-full w-28 h-28 object-cover border-4 border-orange-200 shadow bg-white" />
-                                    </div>
                                     {/* Title with underline animation */}
                                     <h4 className="font-semibold text-lg mb-2 text-orange-800 relative z-10 text-center w-full">
                                         <span className="inline-block relative group-hover:text-orange-600 transition-colors duration-300">
@@ -262,7 +258,11 @@ const About = () => {
                                         </span>
                                     </h4>
                                     <p className="text-gray-700 text-sm mb-1 text-center">Founder & CEO</p>
-                                    <p className="text-gray-600 text-xs text-center">Sanam brings strategic insight and creative energy to Orange Lilies, building a vibrant community and driving the brand's mission to inspire confidence and positive change.</p>
+                                    <p className="text-gray-600 text-xs text-center">
+                                        Sanam brings strategic insight and creative energy to Orange Lilies, building a vibrant community and driving the brand's mission to inspire confidence and positive change.
+                                        <br /><br />
+                                        With expertise in business strategy and a passion for women's wellness, Sanam ensures that Orange Lilies is not just a product, but a movement. She is committed to fostering open conversations about periods, supporting education initiatives, and making a real difference in the lives of women. Her vision is to create a supportive, inclusive space where every woman feels heard and empowered.
+                                    </p>
                                 </div>
                                 {/* Corner accent */}
                                 <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-r-[40px] border-transparent border-r-orange-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
