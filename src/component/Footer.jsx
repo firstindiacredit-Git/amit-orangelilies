@@ -136,7 +136,7 @@ const Footer = () => {
                                     { text: "info@orangelilies.com", href: "mailto:info@orangelilies.com" },
                                     { text: "+91-8368615088", href: "https://api.whatsapp.com/send?phone=918368615088" },
                                     { text: "E 44 Okhla phase 2, Delhi 110020", href: "https://www.google.com/maps/place/Orange+Lilies/@28.5356781,77.2679603,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce1a06e1bd4e3:0x74f32ec86992116f!8m2!3d28.5356734!4d77.2705352!16s%2Fg%2F11mdp4p2xb?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" },
-                                    { text: "The Kutumb group is ISO 9001:2015 GMP Certified", href: "https://www.getdistributors.com/distributors/the-kutumb-group-258587/" }
+                                    { text: "The Kutumb Group is ISO 9001:2015 GMP Certified", href: "https://www.getdistributors.com/distributors/the-kutumb-group-258587/" }
                                 ]
                             }
                         ].map((category, index) => (

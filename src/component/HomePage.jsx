@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import Features from './Features';
 import Header from './Header';
 import Footer from './Footer';
+import Card from './Card';
+import { Smile, Heart, Lightbulb, Leaf, CheckCircle, Users } from 'lucide-react';
 
 const HomePage = () => {
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -22,6 +24,14 @@ const HomePage = () => {
         setOpenFaqIndex(openFaqIndex === index ? null : index);
     };
 
+    const galleryImages = [
+        { src: 'Images/Gallery-1.jpg' },
+        { src: 'Images/Gallery-2.jpg' },
+        { src: 'Images/Gallery-3.jpg' },
+        { src: 'Images/Gallery-4.jpg' },
+        { src: 'Images/Gallery-5.jpg' },
+    ];
+
     return (
         <div className="min-h-screen bg-orange-50 text-gray-800">
 
@@ -29,7 +39,7 @@ const HomePage = () => {
             <Header />
 
             {/* Hero Section with Enhanced Animations and Hover Effects */}
-            <section id="hero" className="md:ml-15 py-20 sm:py-28 md:py-40 px-4 sm:px-8 md:px-12 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-white to-orange-50 relative overflow-hidden">
+            <section id="hero" className="md:ml-15 py-20 sm:py-28 md:py-40 px-4 sm:px-8 md:px-12 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-white to-orange-50 relative overflow-hidden" style={{marginBottom:"-5rem"}}>
                 {/* Enhanced Animated Background Elements */}
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
@@ -118,13 +128,13 @@ const HomePage = () => {
             {/* About Section with Enhanced Animations */}
             <section id="about" className="md:ml-30 py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100/50 relative overflow-hidden">
                 {/* Enhanced Decorative elements */}
-                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
+                {/* <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
                 <div className="absolute top-0 right-0 w-64 h-64 bg-orange-200/20 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange-300/10 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-orange-400 rounded-full animate-ping opacity-70"></div>
                 <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-orange-500 rounded-full animate-ping opacity-70 animation-delay-700"></div>
-                <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-orange-400 rounded-full animate-ping opacity-70 animation-delay-300"></div>
+                <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-orange-400 rounded-full animate-ping opacity-70 animation-delay-300"></div> */}
 
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col md:flex-row items-center relative z-10">
@@ -152,13 +162,13 @@ const HomePage = () => {
                                     From young girls to working professionals, travelers to athletes — Orange Lilies Disposable Panties offer a snug, rash-free fit with 360° leak protection, so you can live every day with confidence.
                                 </p>
 
-                                <p className="text-base sm:text-lg text-gray-600 leading-relaxed transform transition-opacity duration-500 hover:text-gray-700 animate-fadeIn delay-500">
+                                {/* <p className="text-base sm:text-lg text-gray-600 leading-relaxed transform transition-opacity duration-500 hover:text-gray-700 animate-fadeIn delay-500">
                                     Behind Orange Lilies is a passionate team of innovators, designers, and wellness advocates dedicated to transforming period care. We are a women-led, India-based group committed to comfort, hygiene, and empowerment.
-                                </p>
+                                </p> */}
 
-                                <p className="text-base sm:text-lg text-gray-600 leading-relaxed transform transition-opacity duration-500 hover:text-gray-700 animate-fadeIn delay-700">
+                                {/* <p className="text-base sm:text-lg text-gray-600 leading-relaxed transform transition-opacity duration-500 hover:text-gray-700 animate-fadeIn delay-700">
                                     Together, we're redefining the way women experience their periods—with care, compassion, and confidence.
-                                </p>
+                                </p> */}
                             </div>
 
                             {/* <div className="mt-8 transform transition-all duration-300 hover:translate-x-1">
@@ -207,30 +217,106 @@ const HomePage = () => {
                                 <div className="absolute bottom-0 left-0 transform translate-x-3 translate-y-3 w-8 h-8 bg-orange-200 rounded-full opacity-0 group-hover:opacity-60 transition-all duration-500 blur-sm"></div>
                                 <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-orange-300 rounded-full opacity-60 z-0 transition-transform duration-500 group-hover:scale-125 group-hover:opacity-30"></div>
                             </div>
-
                         </div>
-
-                    </div>
-                    {/* About Redirect Button - placed just below Video Side with Enhanced Effects */}
-                    <div className="w-full flex justify-center mt-6 mb-10">
-                        <a
-                            href="/about"
-                            style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
-                            className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
-                        >
-                            <span className="relative z-10 text-white">Learn More About Us</span>
-                            <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
-                            <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
-                            {/* Animated sparkle effect */}
-                            <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                        </a>
                     </div>
                 </div>
             </section>
 
+            {/* Our Story Section */}
+            <div className='mt-10 mb-40'> 
+                <section className="flex flex-col md:flex-row items-center gap-10 mb-16 px-4 sm:px-8 md:px-16">
+                    {/* Image Side with Enhanced Effects */}
+                    <div className="w-full md:w-1/2 flex justify-center z-10 relative group">
+                        <div className="relative p-2 max-w-[300px] md:max-w-[450px] mx-auto">
+                            {/* Animated border */}
+                            <div className="absolute inset-0 p-1">
+                                <div className="h-full w-full rounded-lg border-2 border-dashed border-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            </div>
+                            {/* Enhanced glow effect - smaller */}
+                            <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl blur opacity-0 group-hover:opacity-25 transition-opacity duration-500 group-hover:animate-pulse"></div>
+                            {/* Corner accents - smaller */}
+                            <div className="absolute top-0 left-0 w-0 h-0 border-t-2 border-l-2 border-orange-500 rounded-tl-lg transition-all duration-500 group-hover:w-10 group-hover:h-10 opacity-0 group-hover:opacity-100"></div>
+                            <div className="absolute bottom-0 right-0 w-0 h-0 border-b-2 border-r-2 border-orange-500 rounded-br-lg transition-all duration-500 group-hover:w-10 group-hover:h-10 opacity-0 group-hover:opacity-100"></div>
+                            {/* Image with enhanced effects */}
+                            <img
+                                src="Images/about2.png"
+                                alt="Orange Lilies Period Panties"
+                                className="rounded-lg shadow-lg w-full h-auto bg-orange-100 relative z-10 transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-orange-300/40"
+                                style={{ height: "23rem" }}
+                            />
+                            {/* Enhanced floating elements - smaller */}
+                            <div className="absolute top-0 right-0 transform -translate-x-3 -translate-y-3 w-8 h-8 bg-orange-100 rounded-full opacity-0 group-hover:opacity-60 transition-all duration-500 blur-sm"></div>
+                            <div className="absolute bottom-0 left-0 transform translate-x-3 translate-y-3 w-8 h-8 bg-orange-200 rounded-full opacity-0 group-hover:opacity-60 transition-all duration-500 blur-sm"></div>
+                            <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-orange-300 rounded-full opacity-60 z-0 transition-transform duration-500 group-hover:scale-125 group-hover:opacity-30"></div>
+                        </div>
+                    </div>
+                    <div className="md:w-1/2">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-orange-500 mb-4">Our Story</h2>
+                        <p className="text-base sm:text-lg text-gray-700 mb-4">Orange Lilies was born from a simple idea: to make period care easy, dignified, and empowering for every woman. Founded by a passionate, women-led team in India, we set out to create products that blend comfort, hygiene, and freedom—so you can live every day with confidence.</p>
+                        <p className="text-base sm:text-lg text-gray-700 mb-4">From our innovative disposable panties to our commitment to sustainability and quality, every detail is designed with you in mind. We believe that period care should never hold you back—it should help you thrive.</p>
+                    </div>
+                </section>
+                {/* About Redirect Button - placed just below Video Side with Enhanced Effects */}
+                <div className="w-full flex justify-center mt-6 mb-10">
+                    <a
+                        href="/about"
+                        style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                        className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                    >
+                        <span className="relative z-10 text-white">Learn More About Us</span>
+                        <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                        <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                        {/* Animated sparkle effect */}
+                        <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                    </a>
+                </div>
+            </div>
 
-            {/* Distributorship Section */}
-            <section id="distributorship" className="py-16 md:py-20 px-8 sm:px-12 md:px-24 lg:px-32 bg-gradient-to-br from-orange-100/50 to-white relative overflow-hidden">
+            {/* Gallery Section */}
+            <section className="mb-16 px-4 sm:px-8 md:px-16">
+                <h2 className="text-2xl sm:text-3xl font-bold text-orange-500 mb-6 text-center">Gallery</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                    {galleryImages.map((img, idx) => (
+                        <div
+                            key={idx}
+                            className="overflow-hidden rounded-2xl shadow-xl border-2 border-orange-100 bg-white transition-all duration-300 hover:shadow-2xl hover:border-orange-300"
+                        >
+                            <img
+                                src={img.src}
+                                alt={img.alt}
+                                className="w-full h-48 object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
+                                style={{ cursor: "pointer" }}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* Why Choose Us */}
+            <section id="why-choose" className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-b from-white to-orange-50 relative overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
+                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
+                <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-orange-400 rounded-full animate-ping opacity-70 animation-delay-300"></div>
+                <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-orange-500 rounded-full animate-ping opacity-70 animation-delay-1000"></div>
+
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <div className="items-center">
+                        {/* Content side */}
+                        <div className="text-center mb-12" style={{ marginBottom: "-2rem" }}>
+                            <div className="inline-block relative mb-3">
+                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Why Choose Us</h3>
+                                <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
+                            </div>
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600">The Perfect Blend of Comfort & Protection</h2>
+                        </div>
+                        <Features />
+                    </div>
+                </div>
+            </section>
+
+             {/* Distributorship Section */}
+             <section id="distributorship" className="py-16 md:py-20 px-8 sm:px-12 md:px-24 lg:px-32 bg-gradient-to-br from-orange-100/50 to-white relative overflow-hidden">
                 {/* Decorative elements */}
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
@@ -312,29 +398,6 @@ const HomePage = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Why Choose Us */}
-            <section id="why-choose" className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-b from-white to-orange-50 relative overflow-hidden">
-                {/* Decorative elements */}
-                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
-                <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-orange-400 rounded-full animate-ping opacity-70 animation-delay-300"></div>
-                <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-orange-500 rounded-full animate-ping opacity-70 animation-delay-1000"></div>
-
-                <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="items-center">
-                        {/* Content side */}
-                        <div className="text-center mb-12" style={{ marginBottom: "-2rem" }}>
-                            <div className="inline-block relative mb-3">
-                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Why Choose Us</h3>
-                                <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
-                            </div>
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600">The Perfect Blend of Comfort & Protection</h2>
-                        </div>
-                        <Features />
                     </div>
                 </div>
             </section>
@@ -768,7 +831,7 @@ const HomePage = () => {
                         {[
                             {
                                 title: "S - M",
-                                description: "Waist 24-30 inches. Ideal for teens and petite women who prefer a snug, comfortable fit for everyday use.",
+                                description: "Waist 22-30 inches. Ideal for teens and petite women who prefer a snug, comfortable fit for everyday use.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <circle cx="12" cy="12" r="6" strokeWidth="2" />
@@ -777,7 +840,7 @@ const HomePage = () => {
                             },
                             {
                                 title: "M - L",
-                                description: "Waist 28-34 inches. Perfect for most women, offering a balance of comfort and flexibility for active days.",
+                                description: "Waist 30-38 inches. Perfect for most women, offering a balance of comfort and flexibility for active days.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <rect x="6" y="6" width="12" height="12" rx="3" strokeWidth="2" />
@@ -786,7 +849,7 @@ const HomePage = () => {
                             },
                             {
                                 title: "XL - XXL",
-                                description: "Waist 32-40 inches. Great for those who want extra room and comfort, especially during heavy flow or overnight.",
+                                description: "Waist 38-46 inches. Great for those who want extra room and comfort, especially during heavy flow or overnight.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <polygon points="12,4 20,20 4,20" strokeWidth="2" />
@@ -795,7 +858,7 @@ const HomePage = () => {
                             },
                             {
                                 title: "XXL - XXXL",
-                                description: "Waist 38-46 inches. Designed for plus-size comfort, ensuring a secure and gentle fit for all-day confidence.",
+                                description: "Waist 46-54 inches. Designed for plus-size comfort, ensuring a secure and gentle fit for all-day confidence.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path d="M12 4a8 8 0 110 16 8 8 0 010-16zm0 0v16m8-8H4" strokeWidth="2" />

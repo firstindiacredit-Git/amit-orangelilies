@@ -261,7 +261,7 @@ const About = () => {
                                     <p className="text-gray-600 text-xs text-center">
                                         Sanam brings strategic insight and creative energy to Orange Lilies, building a vibrant community and driving the brand's mission to inspire confidence and positive change.
                                         <br /><br />
-                                        With expertise in business strategy and a passion for women's wellness, Sanam ensures that Orange Lilies is not just a product, but a movement. She is committed to fostering open conversations about periods, supporting education initiatives, and making a real difference in the lives of women. Her vision is to create a supportive, inclusive space where every woman feels heard and empowered.
+                                        With expertise in business strategy and a passion for women's wellness, Sanam ensures that Orange Lilies is not just a product, but a movement. He is committed to fostering open conversations about periods, supporting education initiatives, and making a real difference in the lives of women. His vision is to create a supportive, inclusive space where every woman feels heard and empowered.
                                     </p>
                                 </div>
                                 {/* Corner accent */}

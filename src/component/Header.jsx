@@ -66,7 +66,7 @@ const Header = () => {
                                 <span className="text-white">Contact Us</span>
                             </a>
                         </div>
-                        <a href="https://dl.flipkart.com/s/iFfOa5NNNN" target="_blank" rel="noopener noreferrer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <a href="https://amzn.in/d/5SllMbz" target="_blank" rel="noopener noreferrer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
                             <span className="text-orange-500">Shop Now</span>
                         </a>
                     </nav>

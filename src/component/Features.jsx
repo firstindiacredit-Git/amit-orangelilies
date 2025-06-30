@@ -42,6 +42,13 @@ const featuresList = [
     color: "blue",
   },
   {
+    title: "Modern & Stylish Design",
+    description: "Thoughtfully crafted with a modern, elegant look—because period care should feel as good as it looks. Experience comfort and confidence with style.",
+    icon: <Smile className="w-10 h-10 text-pink-500" />,
+    gradient: "from-pink-100 to-purple-50",
+    color: "pink",
+  },
+  {
     title: "Proudly Made in India",
     description: "Locally crafted with care, ensuring high-quality period protection that supports women across the nation.",
     icon: <Sun className="w-10 h-10 text-orange-500" />,
@@ -51,24 +58,18 @@ const featuresList = [
   {
     title: "ISO 9001:2015 Certified Quality",
     description: "Internationally recognized ISO 9001:2015 certification for quality management systems, ensuring consistent, high-quality products and customer satisfaction.",
-    icon: <Shield className="w-10 h-10 text-blue-500" />, 
+    icon: <Shield className="w-10 h-10 text-blue-500" />,
     gradient: "from-blue-100 to-blue-50",
     color: "blue",
   },
   {
     title: "GMP (Good Manufacturing Practices) Certified",
     description: "Certified for Good Manufacturing Practices (GMP), guaranteeing safe, hygienic, and reliable production standards for women's hygiene products.",
-    icon: <Check className="w-10 h-10 text-green-500" />, 
+    icon: <Check className="w-10 h-10 text-green-500" />,
     gradient: "from-green-100 to-green-50",
     color: "green",
   },
-  {
-    title: "Modern & Stylish Design",
-    description: "Thoughtfully crafted with a modern, elegant look—because period care should feel as good as it looks. Experience comfort and confidence with style.",
-    icon: <Smile className="w-10 h-10 text-pink-500" />, 
-    gradient: "from-pink-100 to-purple-50",
-    color: "pink",
-  },
+
 ];
 
 const FeatureCard = ({ feature, index }) => {
@@ -111,7 +112,7 @@ const FeatureCard = ({ feature, index }) => {
       hoverRotate={1}
     >
       <div className="flex flex-col items-center text-center relative">
-        <motion.div 
+        <motion.div
           className="mb-4 p-4 rounded-full bg-white/80 backdrop-blur-sm relative z-10"
           variants={iconVariants}
           whileHover="hover"
@@ -130,14 +131,14 @@ const FeatureCard = ({ feature, index }) => {
           />
           {feature.icon}
         </motion.div>
-        <motion.h3 
+        <motion.h3
           className="text-xl font-bold mb-3 relative z-10"
           variants={textVariants}
           whileHover="hover"
         >
           {feature.title}
         </motion.h3>
-        <motion.p 
+        <motion.p
           className="text-neutral-600 relative z-10"
           whileHover={{ scale: 1.02 }}
         >
@@ -174,7 +175,7 @@ const Features = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Why Choose <motion.span 
+          <h2 className="section-title">Why Choose <motion.span
             className="text-orange-500 inline-block"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -183,13 +184,13 @@ const Features = () => {
             The most convenient period care solution for young girls, working women, sportswomen, and travelers.
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuresList.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}
         </div>
-        
+
         {/* <motion.div 
           className="mt-16 text-center"
           initial={{ opacity: 0, y: 30 }}
