@@ -14,7 +14,7 @@ function App() {
     <div >
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Comingsoon />}></Route>
+          {/* <Route path='/' element={<Comingsoon />}></Route> */}
           <Route path='/home' element={<Home />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/about' element={<About />}></Route>

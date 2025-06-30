@@ -315,92 +315,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-             {/* Distributorship Section */}
-             <section id="distributorship" className="py-16 md:py-20 px-8 sm:px-12 md:px-24 lg:px-32 bg-gradient-to-br from-orange-100/50 to-white relative overflow-hidden">
-                {/* Decorative elements */}
-                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
-
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <div className="inline-block relative mb-3">
-                            <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">DISTRIBUTORSHIP</h3>
-                            <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
-                        </div>
-                        <h2 className="text-3xl sm:text-4xl font-bold text-orange-600 mb-4">Become Our Distribution Partner</h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="space-y-6">
-                            <p className="text-gray-700 leading-relaxed">
-                                We are pleased to introduce Orange Lilies, a pioneering brand in women's hygiene and wellness, offering premium-quality disposable period panties that combine comfort, convenience, and care. Backed by research and innovation, Orange Lilies aims to empower women with a safe, stress-free period experience.
-                            </p>
-
-                            <div className="bg-white p-6 rounded-xl shadow-lg">
-                                <h3 className="text-xl font-semibold text-orange-600 mb-4">Product Highlights</h3>
-                                <ul className="space-y-3">
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">•</span>
-                                        <span>Single-use, leak-proof, and rash-free design</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">•</span>
-                                        <span>Ideal for travel, school-going girls, working women, and postpartum care</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">•</span>
-                                        <span>Hygienically packed and dermatologically tested</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">•</span>
-                                        <span>High reorder rate and positive customer feedback</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="space-y-6">
-                            <div className="bg-white p-6 rounded-xl shadow-lg">
-                                <h3 className="text-xl font-semibold text-orange-600 mb-4">Distributor Benefits</h3>
-                                <ul className="space-y-3">
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">✔</span>
-                                        <span>Attractive margins</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">✔</span>
-                                        <span>Brand support & promotional materials</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">✔</span>
-                                        <span>Transparent policies and regular stock flow</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-orange-500 mr-2">✔</span>
-                                        <span>Exclusive territory rights (upon agreement)</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div className="text-center">
-                                <a
-                                    href="https://www.getdistributors.com/distributors/the-kutumb-group-258587/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
-                                    className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
-                                >
-                                    <span className="relative z-10 text-white">Contact Us for Distributorship</span>
-                                    <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
-                                    <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
-                                    {/* Animated sparkle effect */}
-                                    <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             {/* How to Use Section */}
             <section id='care' className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100 relative overflow-hidden">
@@ -500,146 +415,6 @@ const HomePage = () => {
                             Simple, hygienic, and hassle-free!
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
                         </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Customer Reviews */}
-            <section id='reviews' className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100/40 relative overflow-hidden">
-                <div className="absolute top-20 left-20 w-64 h-64 bg-orange-200/20 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-20 right-20 w-64 h-64 bg-orange-300/20 rounded-full blur-3xl"></div>
-                <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-orange-400/60 rounded-full animate-ping opacity-70"></div>
-
-                <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="text-center mb-14">
-                        <div>
-                            <div className="inline-block relative mb-3">
-                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Love & Support</h3>
-                                <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
-                            </div>
-                        </div>
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600 relative inline-block">
-                            <span className="relative">
-                                Celebrate womanhood with
-                                <span className="text-orange-500 relative mx-2">
-                                    Orange Lilies™
-                                    <svg className="absolute -bottom-1 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#fff3e0" opacity=".3" className="shape-fill"></path>
-                                    </svg>
-                                </span>
-                            </span>
-                        </h2>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
-                        {[
-                            {
-                                name: "Monika",
-                                review: "These panties have changed my period experience completely. So comfortable and reliable - I won't use anything else now!",
-                                color: "orange"
-                            },
-                            {
-                                name: "Poonam",
-                                review: "I have very sensitive skin and these are the only panties that don't cause irritation. Plus, they're super absorbent!",
-                                color: "pink"
-                            },
-                            {
-                                name: "Dolly",
-                                review: "After trying so many brands, I finally found Orange Lilies. They're amazingly comfortable and I feel secure all day.",
-                                color: "blue"
-                            }
-                        ].map((testimonial, index) => (
-                            <div key={index} className="group relative transform transition-all duration-500 hover:-translate-y-2">
-                                {/* Card with effects */}
-                                <div className={`p-6 sm:p-8 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-500 relative overflow-hidden z-10 border ${testimonial.color === 'orange'
-                                    ? 'bg-gradient-to-br from-orange-50 to-orange-100/70 border-orange-200/50 group-hover:border-orange-300'
-                                    : testimonial.color === 'pink'
-                                        ? 'bg-gradient-to-br from-pink-50 to-pink-100/70 border-pink-200/50 group-hover:border-pink-300'
-                                        : 'bg-gradient-to-br from-blue-50 to-blue-100/70 border-blue-200/50 group-hover:border-blue-300'
-                                    }`}>
-                                    {/* Background pattern */}
-                                    <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${testimonial.color === 'orange'
-                                        ? 'bg-gradient-to-br from-orange-200/30 to-orange-300/20'
-                                        : testimonial.color === 'pink'
-                                            ? 'bg-gradient-to-br from-pink-200/30 to-pink-300/20'
-                                            : 'bg-gradient-to-br from-blue-200/30 to-blue-300/20'
-                                        }`}></div>
-
-                                    {/* Quote icon */}
-                                    <div className={`absolute -top-4 -left-4 opacity-30 group-hover:opacity-50 transition-opacity duration-500 ${testimonial.color === 'orange'
-                                        ? 'text-orange-300'
-                                        : testimonial.color === 'pink'
-                                            ? 'text-pink-300'
-                                            : 'text-blue-300'
-                                        }`}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
-                                        </svg>
-                                    </div>
-
-                                    {/* Stars */}
-                                    <div className="flex justify-center mb-5 relative z-10">
-                                        <div className="flex">
-                                            {[1, 2, 3, 4, 5].map((star) => (
-                                                <svg
-                                                    key={star}
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    className={`h-5 w-5 sm:h-6 sm:w-6 transform transition-transform duration-300 group-hover:scale-110 delay-${star * 100} ${testimonial.color === 'orange'
-                                                        ? 'text-orange-500'
-                                                        : testimonial.color === 'pink'
-                                                            ? 'text-pink-500'
-                                                            : 'text-blue-500'
-                                                        }`}
-                                                    viewBox="0 0 20 20"
-                                                    fill="currentColor"
-                                                >
-                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                </svg>
-                                            ))}
-                                        </div>
-                                    </div>
-
-                                    {/* Review text */}
-                                    <p className={`text-sm sm:text-base mb-5 leading-relaxed relative z-10 transition-all duration-500 ${testimonial.color === 'orange'
-                                        ? 'text-orange-800/80 group-hover:text-orange-900'
-                                        : testimonial.color === 'pink'
-                                            ? 'text-pink-800/80 group-hover:text-pink-900'
-                                            : 'text-blue-800/80 group-hover:text-blue-900'
-                                        }`}>
-                                        "{testimonial.review}"
-                                    </p>
-
-                                    <div className={`w-12 h-0.5 mx-auto mb-3 group-hover:w-20 transition-all duration-500 ${testimonial.color === 'orange'
-                                        ? 'bg-orange-300'
-                                        : testimonial.color === 'pink'
-                                            ? 'bg-pink-300'
-                                            : 'bg-blue-300'
-                                        }`}></div>
-
-                                    {/* Name */}
-                                    <p className={`font-medium text-base sm:text-lg relative z-10 ${testimonial.color === 'orange'
-                                        ? 'text-orange-700 group-hover:text-orange-800'
-                                        : testimonial.color === 'pink'
-                                            ? 'text-pink-700 group-hover:text-pink-800'
-                                            : 'text-blue-700 group-hover:text-blue-800'
-                                        }`}>{testimonial.name}</p>
-                                </div>
-
-                                {/* Decorative elements */}
-                                <div className={`absolute -bottom-2 left-10 w-24 h-1.5 rounded-full transform rotate-3 opacity-0 group-hover:opacity-70 transition-all duration-500 ${testimonial.color === 'orange'
-                                    ? 'bg-orange-400'
-                                    : testimonial.color === 'pink'
-                                        ? 'bg-pink-400'
-                                        : 'bg-blue-400'
-                                    }`}></div>
-                                <div className={`absolute -top-2 right-10 w-20 h-1.5 rounded-full transform -rotate-3 opacity-0 group-hover:opacity-60 transition-all duration-500 ${testimonial.color === 'orange'
-                                    ? 'bg-orange-500'
-                                    : testimonial.color === 'pink'
-                                        ? 'bg-pink-500'
-                                        : 'bg-blue-500'
-                                    }`}></div>
-                            </div>
-                        ))}
                     </div>
                 </div>
             </section>
@@ -896,6 +671,233 @@ const HomePage = () => {
 
                                 {/* Bottom glow */}
                                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-orange-300 rounded-full opacity-0 group-hover:opacity-50 transition-all duration-500 group-hover:w-1/2"></div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+             {/* Distributorship Section */}
+             <section id="distributorship" className="py-16 md:py-20 px-8 sm:px-12 md:px-24 lg:px-32 bg-gradient-to-br from-orange-100/50 to-white relative overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-100 opacity-40 rounded-full blur-3xl"></div>
+                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-200 opacity-30 rounded-full blur-3xl"></div>
+
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-12">
+                        <div className="inline-block relative mb-3">
+                            <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">DISTRIBUTORSHIP</h3>
+                            <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
+                        </div>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-orange-600 mb-4">Become Our Distribution Partner</h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                We are pleased to introduce Orange Lilies, a pioneering brand in women's hygiene and wellness, offering premium-quality disposable period panties that combine comfort, convenience, and care. Backed by research and innovation, Orange Lilies aims to empower women with a safe, stress-free period experience.
+                            </p>
+
+                            <div className="bg-white p-6 rounded-xl shadow-lg">
+                                <h3 className="text-xl font-semibold text-orange-600 mb-4">Product Highlights</h3>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">•</span>
+                                        <span>Single-use, leak-proof, and rash-free design</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">•</span>
+                                        <span>Ideal for travel, school-going girls, working women, and postpartum care</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">•</span>
+                                        <span>Hygienically packed and dermatologically tested</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">•</span>
+                                        <span>High reorder rate and positive customer feedback</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="space-y-6">
+                            <div className="bg-white p-6 rounded-xl shadow-lg">
+                                <h3 className="text-xl font-semibold text-orange-600 mb-4">Distributor Benefits</h3>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">✔</span>
+                                        <span>Attractive margins</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">✔</span>
+                                        <span>Brand support & promotional materials</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">✔</span>
+                                        <span>Transparent policies and regular stock flow</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-orange-500 mr-2">✔</span>
+                                        <span>Exclusive territory rights (upon agreement)</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="text-center">
+                                <a
+                                    href="https://www.getdistributors.com/distributors/the-kutumb-group-258587/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
+                                    className="px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 text-white font-medium relative overflow-hidden group/btn transition-all duration-300 hover:shadow-xl hover:shadow-orange-300/30 transform hover:-translate-y-1 active:translate-y-0"
+                                >
+                                    <span className="relative z-10 text-white">Contact Us for Distributorship</span>
+                                    <span className="absolute top-0 left-0 w-full h-0 bg-orange-600 transition-all duration-300 group-hover/btn:h-full -z-0"></span>
+                                    <span className="absolute top-0 left-0 w-0 h-full bg-orange-500 transition-all duration-300 group-hover/btn:w-full -z-0"></span>
+                                    {/* Animated sparkle effect */}
+                                    <span className="absolute top-0 left-0 w-20 h-20 bg-white/20 rounded-full -translate-x-full -translate-y-1/2 group-hover/btn:translate-x-full group-hover/btn:translate-y-1/2 transition-all duration-1000 ease-in-out"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             {/* Customer Reviews */}
+             <section id='reviews' className="py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-gradient-to-br from-orange-50 to-orange-100/40 relative overflow-hidden">
+                <div className="absolute top-20 left-20 w-64 h-64 bg-orange-200/20 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-20 right-20 w-64 h-64 bg-orange-300/20 rounded-full blur-3xl"></div>
+                <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-orange-400/60 rounded-full animate-ping opacity-70"></div>
+
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <div className="text-center mb-14">
+                        <div>
+                            <div className="inline-block relative mb-3">
+                                <h3 className="text-sm font-semibold text-orange-500 uppercase tracking-wider mb-2 relative z-10">Love & Support</h3>
+                                <span className="absolute -bottom-1 left-0 right-0 mx-auto w-12 h-0.5 bg-orange-400 transition-all duration-300 hover:w-full"></span>
+                            </div>
+                        </div>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600 relative inline-block">
+                            <span className="relative">
+                                Celebrate womanhood with
+                                <span className="text-orange-500 relative mx-2">
+                                    Orange Lilies™
+                                    <svg className="absolute -bottom-1 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#fff3e0" opacity=".3" className="shape-fill"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
+                        {[
+                            {
+                                name: "Monika",
+                                review: "These panties have changed my period experience completely. So comfortable and reliable - I won't use anything else now!",
+                                color: "orange"
+                            },
+                            {
+                                name: "Poonam",
+                                review: "I have very sensitive skin and these are the only panties that don't cause irritation. Plus, they're super absorbent!",
+                                color: "pink"
+                            },
+                            {
+                                name: "Dolly",
+                                review: "After trying so many brands, I finally found Orange Lilies. They're amazingly comfortable and I feel secure all day.",
+                                color: "blue"
+                            }
+                        ].map((testimonial, index) => (
+                            <div key={index} className="group relative transform transition-all duration-500 hover:-translate-y-2">
+                                {/* Card with effects */}
+                                <div className={`p-6 sm:p-8 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-500 relative overflow-hidden z-10 border ${testimonial.color === 'orange'
+                                    ? 'bg-gradient-to-br from-orange-50 to-orange-100/70 border-orange-200/50 group-hover:border-orange-300'
+                                    : testimonial.color === 'pink'
+                                        ? 'bg-gradient-to-br from-pink-50 to-pink-100/70 border-pink-200/50 group-hover:border-pink-300'
+                                        : 'bg-gradient-to-br from-blue-50 to-blue-100/70 border-blue-200/50 group-hover:border-blue-300'
+                                    }`}>
+                                    {/* Background pattern */}
+                                    <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${testimonial.color === 'orange'
+                                        ? 'bg-gradient-to-br from-orange-200/30 to-orange-300/20'
+                                        : testimonial.color === 'pink'
+                                            ? 'bg-gradient-to-br from-pink-200/30 to-pink-300/20'
+                                            : 'bg-gradient-to-br from-blue-200/30 to-blue-300/20'
+                                        }`}></div>
+
+                                    {/* Quote icon */}
+                                    <div className={`absolute -top-4 -left-4 opacity-30 group-hover:opacity-50 transition-opacity duration-500 ${testimonial.color === 'orange'
+                                        ? 'text-orange-300'
+                                        : testimonial.color === 'pink'
+                                            ? 'text-pink-300'
+                                            : 'text-blue-300'
+                                        }`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                        </svg>
+                                    </div>
+
+                                    {/* Stars */}
+                                    <div className="flex justify-center mb-5 relative z-10">
+                                        <div className="flex">
+                                            {[1, 2, 3, 4, 5].map((star) => (
+                                                <svg
+                                                    key={star}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    className={`h-5 w-5 sm:h-6 sm:w-6 transform transition-transform duration-300 group-hover:scale-110 delay-${star * 100} ${testimonial.color === 'orange'
+                                                        ? 'text-orange-500'
+                                                        : testimonial.color === 'pink'
+                                                            ? 'text-pink-500'
+                                                            : 'text-blue-500'
+                                                        }`}
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                >
+                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Review text */}
+                                    <p className={`text-sm sm:text-base mb-5 leading-relaxed relative z-10 transition-all duration-500 ${testimonial.color === 'orange'
+                                        ? 'text-orange-800/80 group-hover:text-orange-900'
+                                        : testimonial.color === 'pink'
+                                            ? 'text-pink-800/80 group-hover:text-pink-900'
+                                            : 'text-blue-800/80 group-hover:text-blue-900'
+                                        }`}>
+                                        "{testimonial.review}"
+                                    </p>
+
+                                    <div className={`w-12 h-0.5 mx-auto mb-3 group-hover:w-20 transition-all duration-500 ${testimonial.color === 'orange'
+                                        ? 'bg-orange-300'
+                                        : testimonial.color === 'pink'
+                                            ? 'bg-pink-300'
+                                            : 'bg-blue-300'
+                                        }`}></div>
+
+                                    {/* Name */}
+                                    <p className={`font-medium text-base sm:text-lg relative z-10 ${testimonial.color === 'orange'
+                                        ? 'text-orange-700 group-hover:text-orange-800'
+                                        : testimonial.color === 'pink'
+                                            ? 'text-pink-700 group-hover:text-pink-800'
+                                            : 'text-blue-700 group-hover:text-blue-800'
+                                        }`}>{testimonial.name}</p>
+                                </div>
+
+                                {/* Decorative elements */}
+                                <div className={`absolute -bottom-2 left-10 w-24 h-1.5 rounded-full transform rotate-3 opacity-0 group-hover:opacity-70 transition-all duration-500 ${testimonial.color === 'orange'
+                                    ? 'bg-orange-400'
+                                    : testimonial.color === 'pink'
+                                        ? 'bg-pink-400'
+                                        : 'bg-blue-400'
+                                    }`}></div>
+                                <div className={`absolute -top-2 right-10 w-20 h-1.5 rounded-full transform -rotate-3 opacity-0 group-hover:opacity-60 transition-all duration-500 ${testimonial.color === 'orange'
+                                    ? 'bg-orange-500'
+                                    : testimonial.color === 'pink'
+                                        ? 'bg-pink-500'
+                                        : 'bg-blue-500'
+                                    }`}></div>
                             </div>
                         ))}
                     </div>
