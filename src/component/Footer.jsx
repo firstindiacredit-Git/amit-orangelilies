@@ -113,11 +113,11 @@ const Footer = () => {
                             {
                                 title: "Help",
                                 links: [
-                                    { text: "FAQs", href: "/home#faq" },
+                                    { text: "FAQs", href: "/#faq" },
                                     // { text: "Shipping & Returns", href: "/shipping" },
-                                    { text: "Care Instructions", href: "/home#care" },
+                                    { text: "Care Instructions", href: "/#care" },
                                     { text: "Contact Us", href: "/contact" },
-                                    { text: "Reviews", href: "/home#reviews" }
+                                    { text: "Reviews", href: "/#reviews" }
                                 ]
                             },
                             {

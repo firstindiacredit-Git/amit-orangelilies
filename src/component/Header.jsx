@@ -13,9 +13,9 @@ const Header = () => {
     const handleNavigation = (e, section) => {
         e.preventDefault();
         
-        if (location.pathname !== '/home') {
+        if (location.pathname !== '/') {
             // If not on home page, navigate to home page first
-            navigate('/home');
+            navigate('/');
             // Use setTimeout to ensure navigation completes before scrolling
             setTimeout(() => {
                 const element = document.querySelector(section);
@@ -39,7 +39,7 @@ const Header = () => {
             <header className="fixed top-0 sm:top-6 w-full left-0 sm:left-1/2 transform sm:-translate-x-1/2 z-50 sm:w-[90%] max-w-7xl px-4 sm:px-0">
                 <div className="bg-orange-400/90 backdrop-blur-md sm:rounded-full py-3 px-4 sm:px-8 flex items-center justify-between shadow-lg sm:border border-white/10">
                     {/* Logo on the left */}
-                    <div onClick={() => navigate('/home#hero')} className="flex items-center transition-all duration-500 hover:scale-105 cursor-pointer">
+                    <div onClick={() => navigate('/#hero')} className="flex items-center transition-all duration-500 hover:scale-105 cursor-pointer">
                         <img
                             src='Images/logo.png'
                             alt="Orange Lilies"
@@ -49,7 +49,7 @@ const Header = () => {
                     </div>
                     {/* Navigation on the right - Desktop */}
                     <nav className="hidden md:flex items-center space-x-8">
-                        <a href="/home#hero" onClick={(e) => handleNavigation(e, '#hero')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
+                        <a href="/#hero" onClick={(e) => handleNavigation(e, '#hero')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
                             <span className="text-white">Home</span>
                         </a>
                         <a href="/about" className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
@@ -58,7 +58,7 @@ const Header = () => {
                         {/* <a href="#products" className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
                             <span className="text-white">Products</span>
                         </a> */}
-                        <a href="/home#why-choose" onClick={(e) => handleNavigation(e, '#why-choose')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
+                        <a href="/#why-choose" onClick={(e) => handleNavigation(e, '#why-choose')} className="text-white hover:text-orange-200 transition-colors duration-300 relative px-2 py-1">
                             <span className="text-white">Why Choose Us</span>
                         </a>
                         <div className="relative group">
@@ -94,14 +94,14 @@ const Header = () => {
 
                         <nav className="flex flex-col space-y-5 relative">
                             {[
-                                { href: "/home#about", label: "About", icon: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
-                                { href: "/home#why-choose", label: "Why Choose Us", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
-                                { href: "/home#faq", label: "FAQs", icon: "M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }
+                                { href: "/#about", label: "About", icon: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+                                { href: "/#why-choose", label: "Why Choose Us", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
+                                { href: "/#faq", label: "FAQs", icon: "M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }
                             ].map((item, index) => (
                                 <a
                                     key={index}
                                     href={item.href}
-                                    onClick={(e) => handleNavigation(e, item.href.split('/home')[1])}
+                                    onClick={(e) => handleNavigation(e, item.href.split('/')[1])}
                                     className="group flex items-center space-x-3 text-white hover:text-orange-100 transition-all duration-300 px-4 py-3 rounded-xl hover:bg-white/10 backdrop-blur-sm"
                                 >
                                     <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-all duration-300" style={{ color: "white" }}>
