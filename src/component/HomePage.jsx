@@ -75,7 +75,7 @@ const HomePage = () => {
                         {/* Enhanced buttons with more animations */}
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                             <a
-                                href="https://dl.flipkart.com/s/iFfOa5NNNN"
+                                href="https://amzn.in/d/5SllMbz"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}

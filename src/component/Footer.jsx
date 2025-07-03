@@ -44,7 +44,7 @@ const Footer = () => {
                     {/* Logo and social media */}
                     <div className="flex flex-col items-center mb-5">
                         <div className="mb-3 transform transition-transform duration-500 hover:scale-110">
-                            <img src="Images/footer.png" alt="Orange Lilies" className="h-10 sm:h-12 drop-shadow-md" />
+                            <img src="Images/footer1.png" alt="Orange Lilies" className="h-10 sm:h-12 drop-shadow-md" />
                         </div>
 
                         {/* Social Media Icons */}
