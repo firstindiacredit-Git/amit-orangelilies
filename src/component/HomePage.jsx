@@ -75,7 +75,7 @@ const HomePage = () => {
                         {/* Enhanced buttons with more animations */}
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                             <a
-                                href="https://amzn.in/d/5SllMbz"
+                                href="https://www.amazon.in/ORANGE-LILIES-Disposable-Maternity-Protection/dp/B0FJ5RGV4L/ref=sr_1_6?crid=3J16IFAVX3C7M&dib=eyJ2IjoiMSJ9.gmBItxqSmOk90NIWN3oid8VcKLA-3gSRxiF6k1aMM0yzYWvhJYGz_qtqHNpMM8BlN--k2HIuEB_AWdYOcBcbco_jYcbdzO3pcRswhPBhKc-zYvV2_-ttcqf6M-tBf2jNzoI2sqo0BhOtI7GjyA01GcEIbKEGemOZPa6l-NNwE2pTWm0OIuq9q8_CFcbdYIWg4KR5emgr_JksxT1mPL9uMs0LWQ6ybTB-FSEKDw82FYXRQ_2IyKzXiNSKfVxvOqA0pWdiKGq_G3fbGnXAGDL501V5VQHqBgI1K7Qip9q_DpE.8D-4m_jMfjOxHO7Oly_4nGWGqKDFNT18BYNUIKzASQo&dib_tag=se&keywords=orange%2Blilies&qid=1753345799&sprefix=orange%2Blilies%2Caps%2C252&sr=8-6&th=1"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ borderRadius: '2rem', backgroundColor: '#ec751e', display: 'inline-block' }}
@@ -992,7 +992,7 @@ const HomePage = () => {
                                                 <span className="text-orange-700 font-semibold">Flipkart</span>
                                             </a>
                                             <a
-                                                href="https://amzn.in/d/fSGOxXf"
+                                                href="https://www.amazon.in/ORANGE-LILIES-Disposable-Maternity-Protection/dp/B0FJ5RGV4L/ref=sr_1_6?crid=3J16IFAVX3C7M&dib=eyJ2IjoiMSJ9.gmBItxqSmOk90NIWN3oid8VcKLA-3gSRxiF6k1aMM0yzYWvhJYGz_qtqHNpMM8BlN--k2HIuEB_AWdYOcBcbco_jYcbdzO3pcRswhPBhKc-zYvV2_-ttcqf6M-tBf2jNzoI2sqo0BhOtI7GjyA01GcEIbKEGemOZPa6l-NNwE2pTWm0OIuq9q8_CFcbdYIWg4KR5emgr_JksxT1mPL9uMs0LWQ6ybTB-FSEKDw82FYXRQ_2IyKzXiNSKfVxvOqA0pWdiKGq_G3fbGnXAGDL501V5VQHqBgI1K7Qip9q_DpE.8D-4m_jMfjOxHO7Oly_4nGWGqKDFNT18BYNUIKzASQo&dib_tag=se&keywords=orange%2Blilies&qid=1753345799&sprefix=orange%2Blilies%2Caps%2C252&sr=8-6&th=1"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="inline-flex items-center px-4 py-2 bg-white border border-orange-200 rounded-full shadow-sm hover:bg-orange-50 transition-colors duration-200"

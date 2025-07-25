@@ -66,7 +66,7 @@ const Header = () => {
                                 <span className="text-white">Contact Us</span>
                             </a>
                         </div>
-                        <a href="https://amzn.in/d/5SllMbz" target="_blank" rel="noopener noreferrer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <a href="https://www.amazon.in/ORANGE-LILIES-Disposable-Maternity-Protection/dp/B0FJ5RGV4L/ref=sr_1_6?crid=3J16IFAVX3C7M&dib=eyJ2IjoiMSJ9.gmBItxqSmOk90NIWN3oid8VcKLA-3gSRxiF6k1aMM0yzYWvhJYGz_qtqHNpMM8BlN--k2HIuEB_AWdYOcBcbco_jYcbdzO3pcRswhPBhKc-zYvV2_-ttcqf6M-tBf2jNzoI2sqo0BhOtI7GjyA01GcEIbKEGemOZPa6l-NNwE2pTWm0OIuq9q8_CFcbdYIWg4KR5emgr_JksxT1mPL9uMs0LWQ6ybTB-FSEKDw82FYXRQ_2IyKzXiNSKfVxvOqA0pWdiKGq_G3fbGnXAGDL501V5VQHqBgI1K7Qip9q_DpE.8D-4m_jMfjOxHO7Oly_4nGWGqKDFNT18BYNUIKzASQo&dib_tag=se&keywords=orange%2Blilies&qid=1753345799&sprefix=orange%2Blilies%2Caps%2C252&sr=8-6&th=1" target="_blank" rel="noopener noreferrer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
                             <span className="text-orange-500">Shop Now</span>
                         </a>
                     </nav>
@@ -119,7 +119,9 @@ const Header = () => {
                             {/* Shop Now Button */}
                             <div className="pt-2">
                                 <a
-                                    href="#contact"
+                                    href="https://www.amazon.in/ORANGE-LILIES-Disposable-Maternity-Protection/dp/B0FJ5RGV4L/ref=sr_1_6?crid=3J16IFAVX3C7M&dib=eyJ2IjoiMSJ9.gmBItxqSmOk90NIWN3oid8VcKLA-3gSRxiF6k1aMM0yzYWvhJYGz_qtqHNpMM8BlN--k2HIuEB_AWdYOcBcbco_jYcbdzO3pcRswhPBhKc-zYvV2_-ttcqf6M-tBf2jNzoI2sqo0BhOtI7GjyA01GcEIbKEGemOZPa6l-NNwE2pTWm0OIuq9q8_CFcbdYIWg4KR5emgr_JksxT1mPL9uMs0LWQ6ybTB-FSEKDw82FYXRQ_2IyKzXiNSKfVxvOqA0pWdiKGq_G3fbGnXAGDL501V5VQHqBgI1K7Qip9q_DpE.8D-4m_jMfjOxHO7Oly_4nGWGqKDFNT18BYNUIKzASQo&dib_tag=se&keywords=orange%2Blilies&qid=1753345799&sprefix=orange%2Blilies%2Caps%2C252&sr=8-6&th=1"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="block w-full bg-white hover:bg-orange-100 px-6 py-3 rounded-xl transition-all duration-300 text-center transform hover:scale-[1.02] hover:shadow-lg group"
                                 >
                                     <span className="text-orange-500 font-semibold text-base group-hover:text-orange-600 transition-colors duration-300">
